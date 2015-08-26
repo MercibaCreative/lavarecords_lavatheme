@@ -19,27 +19,7 @@ $artist_options = array(
 
 $artists = get_posts($artist_options); 
 
-$slide_options = array(
-	'posts_per_page'   => 10,
-	'offset'           => 0,
-	'category'         => '',
-	'orderby'          => 'menu_order',
-	'order'            => 'ASC',
-	'include'          => '',
-	'exclude'          => '',
-	'meta_key'         => '',
-	'meta_value'       => '',
-	'post_type'        => 'slide',
-	'post_mime_type'   => '',
-	'post_parent'      => '',
-	'post_status'      => 'publish',
-	'suppress_filters' => true 
-);
-
-$slides = get_posts($slide_options); 
-
 ?>
-
 
 <?php get_header(); ?>
 <?php get_sidebar(); ?>

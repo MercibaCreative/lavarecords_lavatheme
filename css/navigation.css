@@ -8,26 +8,31 @@
 	width: 100%;
 	display: block;
 	z-index: 1000;
-	padding: 5px 40px 10px;
+	padding: 5px 40px;
 	max-height: 115px;
 	text-align: center;
 	background: #ffffff;
 	border-bottom: 7px solid #1b1b1b;
 }
-#header-navigation .navigation {
-	float: right;
-	text-align: right;
+#header-navigation .navigation-left { 
+	float: left;
+	text-align: left;
 }
-#header-navigation .navigation ul {
+#header-navigation .navigation-right {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+}
+#header-navigation .navigation-left ul, #header-navigation .navigation-right ul {
 	margin: 0;
 	padding: 30px 0 0;
 	list-style-type: none;
 }
-#header-navigation .navigation ul li {
+#header-navigation .navigation-left ul li, #header-navigation .navigation-right ul li {
 	display: inline-block;
 }
-#header-navigation .navigation ul li a {
-	font-size: 28px;
+#header-navigation .navigation-left ul li a {
+	font-size: 20px;
 	margin-left: 30px;
 	color: #000;
 	text-transform: uppercase;
@@ -36,17 +41,27 @@
 	-o-transition: color 150ms linear;
 	transition: color 150ms linear;
 }
-#header-navigation .navigation ul li a:hover {
+#header-navigation .navigation-right ul li a {
+	font-size: 20px;
+	margin-right: 30px;
+	color: #000;
+	text-transform: uppercase;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+#header-navigation .navigation-left ul li a:hover, #header-navigation .navigation-right ul li a:hover {
 	text-decoration: none;
 	color: #FF360C;
 }
-#header-navigation .navigation .menu {
+#header-navigation .navigation-left .menu, #header-navigation .navigation-right .menu {
 	display: inline-block;
 	font-weight: 400;
 	font-size: 22px;
 	margin-right: 10px;
 }
-#header-navigation .navigation i {
+#header-navigation .navigation-left i {
 	padding-top: 5px;
 	color: #1b1b1b;
 	border-radius: 4px;
@@ -58,7 +73,7 @@
 	-o-transition: color 150ms linear;
 	transition: color 150ms linear;
 }
-#header-navigation .navigation i:hover {
+#header-navigation .navigation-left i:hover {
 	color: #FF360C;
 }
 #header-navigation .logo {
@@ -77,10 +92,8 @@
 }
 #header-navigation .social-media {
 	position: absolute;
-	top: 35px;
-	left: 10px;
-	float: left;
-	text-align: left;
+	top: 30px;
+	right: 22%;
 }
 #header-navigation .social-media a {
 	padding-top: .5px;
