@@ -1,5 +1,12 @@
-#sb-site {
-	padding-top: 115px;
+header {
+	position: relative;
+	padding: 100px 15px 110px;
+	background-position: center center;
+	background-size: cover;
+	-webkit-transition: background-image 500ms ease-out;
+	-moz-transition: background-image 500ms ease-out;
+	-o-transition: background-image 500ms ease-out;
+	transition: background-image 500ms ease-out;
 }
 
 #header-navigation {
@@ -10,55 +17,40 @@
 	z-index: 1000;
 	padding: 5px 40px;
 	max-height: 115px;
-	text-align: center;
-	background: #ffffff;
-	border-bottom: 7px solid #1b1b1b;
+	background: #000;
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: .18em;
+
+    
 }
-#header-navigation .navigation-left { 
-	float: left;
-	text-align: left;
-}
-#header-navigation .navigation-right {
-	position: absolute;
-	top: 5px;
-	right: 30px;
-}
-#header-navigation .navigation-left ul, #header-navigation .navigation-right ul {
+
+header h1 {
 	margin: 0;
-	padding: 30px 0 0;
-	list-style-type: none;
+	padding: 0 50px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: .18em;
 }
-#header-navigation .navigation-left ul li, #header-navigation .navigation-right ul li {
-	display: inline-block;
+
+
+
+/*----Pads Main Content----*/
+
+#sb-site {
+	padding-top: 115px;
 }
-#header-navigation .navigation-left ul li a {
-	font-size: 20px;
-	margin-left: 30px;
-	color: #000;
-	text-transform: uppercase;
-	-webkit-transition: color 150ms linear;
-	-moz-transition: color 150ms linear;
-	-o-transition: color 150ms linear;
-	transition: color 150ms linear;
-}
-#header-navigation .navigation-right ul li a {
-	font-size: 20px;
-	margin-right: 30px;
-	color: #000;
-	text-transform: uppercase;
-	-webkit-transition: color 150ms linear;
-	-moz-transition: color 150ms linear;
-	-o-transition: color 150ms linear;
-	transition: color 150ms linear;
-}
+
+
+/*----NAV LINKS----*/
+
 #header-navigation .navigation-left ul li a:hover, #header-navigation .navigation-right ul li a:hover {
 	text-decoration: none;
 	color: #FF360C;
 }
 #header-navigation .navigation-left .menu, #header-navigation .navigation-right .menu {
 	display: inline-block;
-	font-weight: 400;
-	font-size: 22px;
 	margin-right: 10px;
 }
 #header-navigation .navigation-left i {
@@ -66,7 +58,6 @@
 	color: #1b1b1b;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 24px;
 	display: none;
 	-webkit-transition: color 150ms linear;
 	-moz-transition: color 150ms linear;
@@ -76,6 +67,53 @@
 #header-navigation .navigation-left i:hover {
 	color: #FF360C;
 }
+
+/*----------RIGHT SIDE OF NAV----------*/
+
+#header-navigation .navigation-left { 
+	float: left;
+	text-align: left;
+}
+#header-navigation .navigation-right {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+}
+
+#header-navigation .navigation-right ul li a {
+	margin-right: 30px;
+    letter-spacing: .18em;
+	color: #FFF;
+	text-transform: uppercase;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+
+/*----------LEFT SIDE OF NAV----------*/
+
+#header-navigation .navigation-left ul, #header-navigation .navigation-right ul {
+	margin: 0;
+	padding: 30px 0 0;
+	list-style-type: none;
+}
+#header-navigation .navigation-left ul li, #header-navigation .navigation-right ul li {
+	display: inline-block;
+}
+#header-navigation .navigation-left ul li a {
+	margin-left: 30px;
+    letter-spacing: .18em;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+
+/*----------LOGO----------*/
+
 #header-navigation .logo {
 	margin: 0 auto;
 	width: 245px;
@@ -90,6 +128,10 @@
 	-o-transition: all 100ms linear;
 	transition: all 100ms linear;
 }
+
+/*----------SOCIAL MEDIA----------*/
+
+
 #header-navigation .social-media {
 	position: absolute;
 	top: 30px;
@@ -116,6 +158,50 @@
 	background: #000;
 }
 
+/*
+@media all and (max-width: 991px) {
+	#sb-site {
+		padding-top: 92px;
+	}
+	#header-navigation {
+		padding: 5px 20px;
+	}
+	#header-navigation .navigation ul,
+	.header-small .navigation ul {
+		padding: 20px 0 0 !important;
+		display: none;
+	}
+	#header-navigation .navigation i {
+		padding-top: 25px;
+		display: inline-block;
+	}
+	#header-navigation .logo {
+		background-image: url('../img/logos/logo-small.png');
+		margin: 0;
+		float: left;
+		width: 115px !important;
+		height: 75px !important;
+		border-radius: 0;
+		background-size: cover;
+	}
+	.header-small .logo {
+		margin: -5px 0 0 !important;
+	}
+	#header-navigation .social-media {
+		display: none;
+	}
+}
+*/
+/*
+@media all and (max-width: 991px) {
+	#header h1 {
+		padding: 0;
+		text-align: center;
+		font-size: 60px;
+	}
+}*/
+
+/*
 .header-small {
 	max-height: 85px !important;
 }
@@ -130,7 +216,9 @@
 	width: 195px !important;
 	height: 65px !important;
 }
+*/
 
+/**
 #sb-site {
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .85);
 	-moz-box-shadow:    0px 0px 15px 0px rgba(0, 0, 0, .85);
@@ -192,36 +280,4 @@
 .sb-slidebar #roster-nav-list {
 	display: none;
 }
-
-@media all and (max-width: 991px) {
-	#sb-site {
-		padding-top: 92px;
-	}
-	#header-navigation {
-		padding: 5px 20px;
-	}
-	#header-navigation .navigation ul,
-	.header-small .navigation ul {
-		padding: 20px 0 0 !important;
-		display: none;
-	}
-	#header-navigation .navigation i {
-		padding-top: 25px;
-		display: inline-block;
-	}
-	#header-navigation .logo {
-		background-image: url('../img/logos/logo-small.png');
-		margin: 0;
-		float: left;
-		width: 115px !important;
-		height: 75px !important;
-		border-radius: 0;
-		background-size: cover;
-	}
-	.header-small .logo {
-		margin: -5px 0 0 !important;
-	}
-	#header-navigation .social-media {
-		display: none;
-	}
-}
+*/
