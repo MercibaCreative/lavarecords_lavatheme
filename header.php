@@ -54,6 +54,9 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/footer.css" />
 		
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
 		<!-- com-score -->
 		<script> 
 			var _comscore = _comscore || []; 
@@ -123,11 +126,11 @@
 			</div>
 			<a href="/" class="logo"></a>
 			<div class="social-media">
-				<a href="http://instagram.com/lavarecordsus" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
+				<a href="https://instagram.com/lavarecordsofficial" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/lavarecordsus" target="_blank"><i class="fa fa-twitter"></i></a>
 				<a href="https://www.facebook.com/LavaRecordsUS" target="_blank"><i class="fa fa-facebook"></i></a>
-				<a href="https://twitter.com/LavaRecordsUS" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-pinterest fa-fw"></i></a>
-				<a href="https://www.linkedin.com/vsearch/p?company=Lava+Records&trk=prof-0-ovw-curr_pos" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+                <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a>
+            
 			</div>
 			<div class="navigation-right">
 				<ul>
