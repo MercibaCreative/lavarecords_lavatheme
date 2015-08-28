@@ -10,8 +10,7 @@
 				</div>
 			</footer>
 
-		</div>
-
+		</article>
 		<!-- bootstrap -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		

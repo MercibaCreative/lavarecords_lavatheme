@@ -111,7 +111,7 @@
 		</div>
 
 		<!-- ==========================NAVIGATION=========================== -->
-		<header id="header-navigation" class="sb-slide">
+		<header>
 			<div class="navigation-left">
 				<i class="fa fa-bars nav-button"></i>
 				<ul>
@@ -135,4 +135,5 @@
 					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</div>
-		</header>		
+		</header>
+		<article>
