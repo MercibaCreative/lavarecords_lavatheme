@@ -36,6 +36,10 @@ header li {
 
 header i {
 	margin: 0 2%;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
 }
 
 header .nav-button {
