@@ -43,15 +43,7 @@
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->
-		<!--<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/navigation.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slider.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/headers.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/content.css?v=2" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/about.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/blog.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/footer.css" />-->
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lavatheme.css" />
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/simple-sidebar.css" />
 		
@@ -115,6 +107,8 @@
 			<li><a href="/events">Tours & Events</a></li>
 			<li><a href="/news">News</a></li>
 			<li><a href="/gallery">Gallery</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
           </ul>
       </div>
 	<article>
