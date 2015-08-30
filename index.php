@@ -24,7 +24,8 @@ $artists = get_posts($artist_options);
 <?php get_header(); ?>
 
 <!-- ==========================MAIN CONTENT=========================== -->
-
+<div id="artistcontainer">
+    
 <?php foreach($artists as $i => $artist): ?>
     <?php //var_dump($artist) ?>
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
@@ -36,5 +37,7 @@ $artists = get_posts($artist_options);
 	</section>
 
 <?php endforeach; ?>
+    
+    </div>
 
 <?php get_footer(); ?>
