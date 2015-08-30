@@ -11,6 +11,8 @@
 	font-weight: 800;
 	font-family: 'Open Sans';
 }
+
+/*
 #artist-section .buttons {
 	padding: 25px 0 0 0;
 	margin: 0 auto;
@@ -35,54 +37,4 @@
 	width:48px;
 	text-align: center;
 }
-#artist-section .buttons ul li a.tour-button, #artist-section .buttons ul li a.website-button{
-	width:110px;
-}
-
-#artist-section .buttons ul li a:hover {
-	background: #000000;
-	text-decoration: none;
-}
-#artist-section .video {
-	padding: 5px;
-	padding-bottom: 0;
-	margin-top: 15px;
-	background: #1B1B1B;
-	display: inline-block;
-	margin-left:5px;
-}
-
-#artist-section .video iframe{
-	width:225px;
-	height: 130px;
-}
-
-@media all and (max-width: 991px) {
-	#artist-section h1 {
-		font-size: 60px;
-	}
-	#artist-section .buttons {
-		padding: 25px 0 0 0;
-	}
-	#artist-section .buttons ul li a {
-		padding: 10px;
-		margin: 5px;
-		width:43px;
-	}
-	#artist-section .buttons ul li a.tour-button,
-	#artist-section .buttons ul li a.website-button{
-		width:100px;
-	}
-
-	#artist-section .video iframe{
-		width:205px;
-	}
-
-/*	#artist-section .video {
-		margin-top: 35px;
-	}
-	#artist-section .video iframe {
-		width: 100%;
-		height: auto;
-	}*/
-}
+*/

@@ -26,17 +26,13 @@ $artists = get_posts($artist_options);
 <!-- ==========================MAIN CONTENT=========================== -->
 
 <?php foreach($artists as $i => $artist): ?>
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
-	<section id="artist-section" class="container-fluid jessie-j <?php echo ($i % 2 == 0) ?  'text-left' :  'text-right';?>" style="background-image: url('<?php echo $image[0];?>');">
+    <?php //var_dump($artist) ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
+	<section id="artist-section" class="container-fluid jessie-j col-md-4 col-sm-6 col-xs-6" style="background-image: url('<?php echo $image[0];?>');">
 		<h1>
 			<?php echo $artist->post_title; ?>
 		</h1>
-		<div class="buttons">
-			
-		</div>
-		<div class="video">
-			<?php echo $artist->video; ?>
-		</div>
+
 	</section>
 
 <?php endforeach; ?>
