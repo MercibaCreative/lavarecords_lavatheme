@@ -32,15 +32,7 @@ $artists = get_posts($artist_options);
 			<?php echo $artist->post_title; ?>
 		</h1>
 		<div class="buttons">
-			<ul class="clearfix">
-
-				<li><a href="<?php echo $artist->tour;?>" class="tour-button">Tour</a></li>
-				<li><a href="<?php echo $artist->website;?>" class="website-button">Website</a></li><br />
-				<li><a href="<?php echo $artist->itunes;?>"><i class="fa fa-music fa-lg"></i></a></li>
-				<li><a href="<?php echo $artist->spotify;?>"><i class="fa fa-spotify fa-lg"></i></a></li>
-				<li><a href="<?php echo $artist->facebook;?>"><i class="fa fa-facebook fa-lg"></i></a></li>
-				<li><a href="<?php echo $artist->twitter;?>"><i class="fa fa-twitter fa-lg"></i></a></li>
-			</ul>
+			
 		</div>
 		<div class="video">
 			<?php echo $artist->video; ?>

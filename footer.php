@@ -11,6 +11,7 @@
 			</footer>
 
 		</article>
+		</div>
 		<!-- bootstrap -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		
@@ -46,6 +47,13 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
+
+		<script>
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+	    </script>
 		
 	</body>
 	

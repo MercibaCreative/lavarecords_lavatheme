@@ -1,4 +1,4 @@
-header {
+nav {
 	background-position: center center;
 	background-size: cover;
 	font-weight: 800;
@@ -15,26 +15,27 @@ header {
     font-size: 12px;
     line-height: 22px;
     letter-spacing: .18em;
-	-webkit-transition: background-image 500ms ease-out;
-	-moz-transition: background-image 500ms ease-out;
-	-o-transition: background-image 500ms ease-out;
-	transition: background-image 500ms ease-out;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
 }
 
-header a {
+nav a {
 	color: #ffffff;
 }
 
-header div {
+nav div {
 	margin: 15px 0;
 }
 
-header li {
+nav li {
 	margin: 0 15px;
 	text-transform: uppercase;
+	background: #000000;
 }
 
-header i {
+nav i {
 	margin: 0 2%;
 	-webkit-transition: color 150ms linear;
 	-moz-transition: color 150ms linear;
@@ -42,39 +43,51 @@ header i {
 	transition: color 150ms linear;
 }
 
-header .nav-button {
+nav .nav-button {
 	display: none;
+	position: absolute;
+	right: 15px;
+	width: 30px;
+	cursor: pointer;
+	margin: 15px 0 0 0;
+	font-size: 22px;
+	z-index: 2;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
 }
 
-header .navigation-left {
+nav .navigation-left {
 	min-width: 45%;
 	height: 45px;
 	float: left;
 }
 
-header .social-media {
+nav .social-media {
 	position: absolute;
 	width: 12%;
 	right: 25%;
 }
 
-header .navigation-right {
+nav .navigation-right {
 	min-width: 20%;
 	height: 45px;
 	float: right;
 	text-align: right;
 }
 
-header ul {
+nav ul {
 	list-style-type: none;
+	background: #000000;
 	padding: 0;
 }
 
-header div, header li {
+nav div, nav li {
 	display: inline;
 }
 
-header .logo {
+nav .logo {
 	margin: 0 auto;
 	position: absolute;
 	width: 100%;
@@ -99,14 +112,54 @@ header .logo {
 	background: #ffffff url('../img/loaders/ajax-loader.gif') center center no-repeat;
 }
 
-#site {
-	padding-top: 115px;
+article {
+	margin-top: 41px;
 }
 
+
 @media all and (max-width: 991px) {
-	#header h1 {
-		padding: 0;
-		text-align: center;
-		font-size: 60px;
+	nav.expanded ul {
+		display: block;
+		position: fixed;
+		height: 50%;
+		width: 100%;
+		margin: 0 100% 0 0;
+	}
+
+	nav.expanded .navigation-right {
+		margin: 25% 80% 0 0;
+		z-index: 2;
+	}
+
+	nav.expanded {
+		padding-left: 0;
+	}
+	
+	article {
+		margin: 0;
+	}
+	
+	nav ul {
+		display: none;
+	}
+
+	nav ul {
+		display: none;
+	}
+	
+	nav .nav-button {
+		display: inline-block;
+	}
+	nav .logo {
+		background-image: url('../img/logos/lava-small.png');
+		margin: 0;
+		width: 100%;
+		height: auto;
+		float: left;
+		border-radius: 0;
+		background-size: cover;
+	}
+	nav .social-media {
+		display: none;
 	}
 }

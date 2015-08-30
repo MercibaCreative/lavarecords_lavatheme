@@ -1,5 +1,6 @@
 <?php
 
+//include_once('acf.php');
 add_theme_support('post-thumbnails');
 
 function word_trim($string, $count, $ellipsis = true){

@@ -1,45 +1,4 @@
 
-@media all and (max-width: 991px) {
-	#sb-site {
-		padding-top: 92px;
-	}
-	#header-navigation {
-		padding: 5px 20px;
-	}
-	#header-navigation .navigation-left ul,
-	.header-small .navigation-left ul {
-		padding: 20px 0 0 !important;
-		display: none;
-	}
-	#header-navigation .navigation-left i {
-		padding-top: 25px;
-		display: inline-block;
-	}
-	#header-navigation .logo {
-		background-image: url('../img/logos/logo-small.png');
-		margin: 0;
-		float: left;
-		width: 115px !important;
-		height: 75px !important;
-		border-radius: 0;
-		background-size: cover;
-	}
-	.header-small .logo {
-		margin: -5px 0 0 !important;
-	}
-	#header-navigation .social-media {
-		display: none;
-	}
-}
-
-
-@media all and (max-width: 991px) {
-	#header h1 {
-		padding: 0;
-		text-align: center;
-		font-size: 60px;
-	}
-}
 
 /*
 .header-small {
