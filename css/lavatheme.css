@@ -3681,7 +3681,8 @@ nav .logo {
   border-top-left-radius: 0;
 }
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   width: 100%;
   min-height: 61px;
   border: 1px solid transparent;

@@ -25,6 +25,7 @@
     display: block;
     z-index: 1000;
     position: fixed;
+    top: 61px;
     right: 250px;
     width: 0;
     height: 100%;
@@ -44,12 +45,7 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-left: -250px;
+    top: 61px;
 }
 
 /* Sidebar Styles */

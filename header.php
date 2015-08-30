@@ -116,4 +116,4 @@
                 <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a></li>
           </ul>
       </div>
-	<article>
+	<article id="page-content-wrapper">
