@@ -36,15 +36,19 @@
 
 		<script>
 		var stopScroll = function(e) { e.preventDefault() }
-		var toggleStopScroll = function () {
-			if ((typeof $._data($('body')[0], 'events') !== 'undefined')) $('body').unbind('touchmove')
-			else $('body').bind('touchmove', stopScroll)
-		}
-	    $("#menu-toggle").click(function(e) {
-	        e.preventDefault();
+		var toggleMenu = function (e) {
+			e.preventDefault();
 	        $("#wrapper").toggleClass("toggled");
-	        toggleStopScroll()
-	    });
+	        $(e.currentTarget).find('span').toggleClass('hidden')
+	        $(e.currentTarget).find('i').toggleClass('hidden')
+			if ((typeof $._data($('body')[0], 'events') !== 'undefined')) {
+				$('body').unbind('touchmove')
+			}
+			else {
+				$('body').bind('touchmove', stopScroll)
+			}
+		}
+	    $("#menu-toggle").on('touchstart click', toggleMenu);
 	    </script>
 		
 	</body>

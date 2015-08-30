@@ -3000,6 +3000,10 @@ input[type="button"].btn-block {
 .glyphicon-tree-deciduous:before {
   content: "\e200";
 }
+#menu-toggle i {
+  color: #fff;
+  font-size: 15px;
+}
 .caret {
   display: inline-block;
   width: 0;
@@ -3454,10 +3458,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
+
+nav {
+  text-align: center;
+}
 nav .logo {
   margin: 7px auto;
-  position: absolute;
-  width: 100%;
+  float: none;
+  width: 100px;
   height: 45px;
   background-image: url('../img/logos/lava-main.png');
   background-position: top center;
@@ -3469,6 +3477,15 @@ nav .logo {
   -o-transition: all 100ms linear;
   transition: all 100ms linear;
 }
+
+@media (min-width: 1024px) {
+  .logo {
+    position: absolute;
+    margin: 7px 0 7px -50px !important;
+    left: 50%;
+  }
+}
+
 .nav {
   text-transform: uppercase;
   margin-bottom: 0;
