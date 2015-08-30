@@ -81,7 +81,7 @@ img {
   border: 0;
 }
 i {
-  margin: 0 7px;
+  margin: 0 10px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -183,9 +183,16 @@ th {
 }
 .social-media {
   position: absolute;
-  width: 12%;
+  width: 200px;
   right: 25%;
   margin: 20px 0;
+  text-align: right;
+}
+.social-media i {
+  color: #fff;
+}
+.social-media i:hover {
+  color: #ff360c;
 }
 
 @media print {

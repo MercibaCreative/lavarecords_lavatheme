@@ -20,20 +20,6 @@
 		
 		<!-- carousel -->
 		<script src="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.carousel.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-
-				$("#slider").owlCarousel({
-					navigation: true,
-					slideSpeed: 300,
-					paginationSpeed: 400,
-					autoPlay: true,
-					singleItem: true,
-					transitionStyle : "goDown"
-				});
-
-			});
-		</script>
 
 		<script>
 			//UA-55710260-1
@@ -49,9 +35,15 @@
 		</script>
 
 		<script>
+		var stopScroll = function(e) { e.preventDefault() }
+		var toggleStopScroll = function () {
+			if ((typeof $._data($('body')[0], 'events') !== 'undefined')) $('body').unbind('touchmove')
+			else $('body').bind('touchmove', stopScroll)
+		}
 	    $("#menu-toggle").click(function(e) {
 	        e.preventDefault();
 	        $("#wrapper").toggleClass("toggled");
+	        toggleStopScroll()
 	    });
 	    </script>
 		
