@@ -77,6 +77,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <i class="fa fa-times hidden"></i>
             </button>
             <a href="/" class="logo"></a>
           </div>
