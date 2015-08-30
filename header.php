@@ -78,7 +78,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="logo"></a>
+            <a href="/" class="logo"></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -109,6 +109,10 @@
 			<li><a href="/gallery">Gallery</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="/contact">Contact</a></li>
+			<li><a href="https://instagram.com/lavarecordsofficial" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/lavarecordsus" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/LavaRecordsUS" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a></li>
           </ul>
       </div>
 	<article>

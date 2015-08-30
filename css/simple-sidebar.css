@@ -10,6 +10,7 @@
     padding: 0 !important;
     margin: 0 !important;
     width: 100%;
+    overflow-x: hidden;
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -56,29 +57,34 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 100%;
+    right: 0;
     margin: 0;
     padding: 0;
+    min-width: 250px;
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    padding-right: 30px;
     line-height: 40px;
     text-align: right;
+    font-size: 18px;
 }
 
 .sidebar-nav li a {
-    display: block;
+    display: inline;
     text-decoration: none;
-    padding-right: 30px;
     color: #fff;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #ff360c;
-    background: rgba(255,255,255,0.2);
+    /*background: rgba(255,255,255,0.2);*/
+}
+
+.sidebar-nav i {
+    color: #ff360c;
 }
 
 .sidebar-nav li a:active,
