@@ -27,14 +27,21 @@ $artists = get_posts($artist_options);
 <div id="artistcontainer">
     
 <?php foreach($artists as $i => $artist): ?>
+    
     <?php //var_dump($artist) ?>
+
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
-	<section id="artist-section" class="container-fluid jessie-j col-md-4 col-sm-6 col-xs-6" style="background-image: url('<?php echo $image[0];?>');">
-		<h1>
-			<?php echo $artist->post_title; ?>
-		</h1>
+    
+<a id="artist-links" href="http://google.com">   
+	<section
+             id="artist-section" 
+             class="container-fluid jessie-j col-md-4 col-sm-6 col-xs-6" 
+             style="background-image: url('<?php echo $image[0];?>'); filter: grayscale(100%); -webkit-filter: grayscale(100%)";
+    >
+        <h1> <?php echo $artist->post_title; ?></h1>
 
 	</section>
+</a> 
 
 <?php endforeach; ?>
     

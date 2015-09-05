@@ -1,3 +1,8 @@
+#artist-section:hover {
+    filter: brightness(60%) !important;
+    -webkit-filter: brightness(60%) !important; 
+}
+
 #artistcontainer {
     float: left;
     width: 100%;
@@ -22,6 +27,8 @@
     vertical-align: middle;
     display: table-cell;
 }
+
+
 
 /*
 #artist-section .buttons {
