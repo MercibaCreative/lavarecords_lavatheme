@@ -1,6 +1,6 @@
-#artist-section:hover {
-    filter: brightness(60%) !important;
-    -webkit-filter: brightness(60%) !important; 
+.artist-section:hover {
+    filter: grayscale(0%) !important;
+    -webkit-filter: grayscale(0%) !important;
 }
 
 #artistcontainer {
@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-#artist-section {
+.artist-section {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -17,7 +17,7 @@
     border: 5px solid #fff;
 }
 
-#artist-section h1 {
+.artist-section h1 {
 	font-size: 34px;
     line-height: 40px;
     letter-spacing: .07em;
@@ -26,9 +26,8 @@
     text-align: center;
     vertical-align: middle;
     display: table-cell;
+    background-color: rgba(0,0,0,0.3);
 }
-
-
 
 /*
 #artist-section .buttons {
