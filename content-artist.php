@@ -7,13 +7,17 @@
 
 <!-- ==========================CONTENT=========================== -->
 <section id="content" class="container">
+    
+
 	
-	<section id="posts" class="col-md-12">
+	<section id="posts">
 
 		<div class="post">
-			
+        
 			
 			<div class="content">
+                
+                <?php echo nl2p($post->post_title); ?> 
 				<?php echo nl2p($post->post_content); ?>
 			</div>
 		</div>
