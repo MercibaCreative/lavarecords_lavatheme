@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Single Post Template
+Template Name: Single Artist Template
 */
 
 
@@ -12,18 +12,14 @@ Template Name: Single Post Template
 
 
 <!-- ==========================MAIN CONTENT=========================== -->
-	<section>
-		<?php
-			// Start the Loop.
-			while ( have_posts() ) : the_post();
+<?php
+	// Start the Loop.
+	while ( have_posts() ) : the_post();
 
-				get_template_part( 'content-post', get_post_format() );
+		get_template_part( 'content-artist', get_post_format() );
 
-			
-			endwhile;
-		?>
-					
-	</section>
-
+	
+	endwhile;
+?>
 
 <?php get_footer(); ?>

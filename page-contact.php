@@ -9,7 +9,6 @@ Template Name: Contact Template
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'single-post-thumbnail' ); ?>
 
 <!-- ==========================MAIN CONTENT=========================== -->
-		<div id="sb-site">
 
 			<!-- ==========================CONTACT CONTENT=========================== -->
 			<section id="header" class="container-fluid" style="background-image: url('<?php echo $image[0];?>');">

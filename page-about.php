@@ -32,7 +32,6 @@ $artists = get_posts($artist_options);
 
 
 <!-- ==========================MAIN CONTENT=========================== -->
-		<div id="sb-site">
 
 			<!-- ==========================ABOUT CONTENT=========================== -->
 			<section id="header" class="container-fluid" style="background-image: url('<?php echo $image[0];?>');">
