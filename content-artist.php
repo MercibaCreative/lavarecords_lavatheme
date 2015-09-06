@@ -22,7 +22,7 @@ $tours = get_posts(array(
 
 		<div class="post">
 
-			<div class="content">
+			<div class="bodycopy">
                 <?php echo nl2p($post->post_title); ?> 
                 <div class="artist-links">
                 	<?php if ($artist["website_link"][0] != "") { ?>
@@ -43,6 +43,7 @@ $tours = get_posts(array(
                 </div>
 				<?php echo nl2p($post->post_content); ?>
 			</div>
+            
 			<ul class="tours">
 			<?php foreach($tours as $i => $tour): ?>
 				<?php $tour_meta = get_post_meta($tour->ID); ?>
@@ -58,7 +59,8 @@ $tours = get_posts(array(
 				<?php } ?>
 			<?php endforeach; ?>
 			</ul>
-		</div>
+		
+        </div>
 
 	</section>
 
