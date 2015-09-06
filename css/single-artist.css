@@ -1,0 +1,12 @@
+.post-header {
+    width: 73%;
+    height:377px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.post-header img{
+    width:100%;
+}
+

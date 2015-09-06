@@ -8,9 +8,10 @@ $tours = get_posts(array(
 ?>
 
 <!-- ==========================ABOUT CONTENT=========================== -->
-<section id="header" class="container-fluid">
-	<img src="<?php echo $image[0];?>" />
+
+<section class="post-header container-fluid"> <img src="<?php echo $image[0];?>" />
 </section>
+
 
 <!-- ==========================CONTENT=========================== -->
 <section id="content" class="container">
@@ -18,9 +19,7 @@ $tours = get_posts(array(
 	<section id="posts" class="col-md-12">
 
 		<div class="post">
-
-			<div class="info">
-			</div>
+		
 			<div class="content">
 				<?php echo nl2p($post->post_content); ?>
 			</div>
