@@ -23,9 +23,11 @@ $tours = get_posts(array(
 		<div class="post">
 
 			<div class="bodycopy">
-                <h1><?php echo nl2p($post->post_title); ?></h1>
+                <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
+            
 				<?php echo nl2p($post->post_content); ?>
 			</div>
+            <h2 class="text-center">Current Tours</h2>
             
 			<ul class="tours">
 			<?php foreach($tours as $i => $tour): ?>
