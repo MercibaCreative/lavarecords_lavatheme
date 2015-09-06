@@ -35,11 +35,8 @@
 		<script charset="utf-8" src="<?php echo get_template_directory_uri(); ?>/js/blur.min.js"></script>
 		
 		<!-- carousel -->
-		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.carousel.css">
-		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.theme.css">
-		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.transitions.css">
-		
-		<!-- Brandon fonts -->
+		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
+
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->

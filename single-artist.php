@@ -12,7 +12,7 @@ Template Name: Single Artist Template
 
 
 <!-- ==========================MAIN CONTENT=========================== -->
-<?php
+<?php 
 	// Start the Loop.
 	while ( have_posts() ) : the_post();
 
