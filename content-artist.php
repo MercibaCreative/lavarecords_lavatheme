@@ -22,11 +22,11 @@ $tours = get_posts(array(
 
 		<div class="post">
 
-			<div class="content">
-                
-                <?php echo nl2p($post->post_title); ?> 
+			<div class="bodycopy">
+                <h1><?php echo nl2p($post->post_title); ?></h1>
 				<?php echo nl2p($post->post_content); ?>
 			</div>
+            
 			<ul class="tours">
 			<?php foreach($tours as $i => $tour): ?>
 				<?php $tour_meta = get_post_meta($tour->ID); ?>
@@ -42,7 +42,8 @@ $tours = get_posts(array(
 				<?php } ?>
 			<?php endforeach; ?>
 			</ul>
-		</div>
+		
+        </div>
 
 	</section>
 
