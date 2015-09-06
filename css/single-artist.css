@@ -16,3 +16,9 @@
     margin-right: auto;
 }
 
+.artist-links a:link a:active a:visited{ 
+    color: #ff360c !important;
+    text-decoration: none;
+}
+.artist-links a:hover { 
+}
