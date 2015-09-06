@@ -23,8 +23,24 @@ $tours = get_posts(array(
 		<div class="post">
 
 			<div class="content">
-                
                 <?php echo nl2p($post->post_title); ?> 
+                <div class="artist-links">
+                	<?php if ($artist["website_link"][0] != "") { ?>
+                		<a href="<?php echo $artist["website_link"][0]; ?>"><?php echo $artist["website_link"][0]; ?></a>
+                	<?php } ?>
+                	<?php if ($artist["instagram_link"][0] != "") { ?>
+                		<a href="<?php echo $artist["instagram_link"][0]; ?>" target="_blank"><i class="fa fa-instagram"></i></a>
+                	<?php } ?>
+                	<?php if ($artist["twitter_link"][0] != "") { ?>
+                		<a href="<?php echo $artist["twitter_link"][0]; ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+					<?php } ?>
+					<?php if ($artist["facebook_link"][0] != "") { ?>
+						<a href="<?php echo $artist["facebook_link"][0]; ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+                	<?php } ?>
+                	<?php if ($artist["soundcloud_link"][0] != "") { ?>
+                		<a href="<?php echo $artist["soundcloud_link"][0]; ?>" target="_blank"><i class="fa fa-soundcloud"></i></a>
+                	<?php } ?>
+                </div>
 				<?php echo nl2p($post->post_content); ?>
 			</div>
 			<ul class="tours">
