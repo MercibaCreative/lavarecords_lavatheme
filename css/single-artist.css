@@ -16,9 +16,14 @@
     margin-right: auto;
 }
 
-.artist-links a:link a:active a:visited{ 
-    color: #ff360c !important;
+.artist-links a:link, .artist-links a:active, .artist-links a:visited{ 
+    color: rgba(255, 52, 12, 100) !important;
     text-decoration: none;
 }
-.artist-links a:hover { 
+.artist-links a:hover{ 
+    color: rgba(0, 0, 0, 100) !important;
+}
+
+.artist-links{
+    padding-bottom: 1.2%;
 }
