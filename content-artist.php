@@ -43,7 +43,7 @@ $tours = get_posts(array(
 			</div>
             
             <h2 class="text-center">Current Tours</h2>
-            <table class="tours">
+            <table class="table tours">
 	            <thead>
 			      <tr>
 			        <th>Date</th>
