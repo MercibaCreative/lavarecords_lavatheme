@@ -3490,6 +3490,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 
+.logo {
+  float: none;
+  width: 100px;
+  height: 45px;
+  background-image: url('../img/logos/lava-main.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+    overflow: hidden;
+}
+
 nav {
   text-align: center;
 }

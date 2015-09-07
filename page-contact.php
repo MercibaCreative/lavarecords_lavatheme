@@ -23,10 +23,10 @@ Template Name: Contact Template
 
 			<div class="bodycopy">
                 <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
-                <img scr="img/logos/lava-main.png"/>
+                <div class="logo"></div>
 				<h4 class="text-center"><?php echo nl2p($post->post_content); ?></h4>
 			</div>
-            
+           
 
             
 		
