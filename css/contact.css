@@ -1,14 +1,36 @@
-#contact{
-    width:53.9%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
 #contactlogo{
-    margin-top: 10%
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .form-control{
     width: 100% !important;
+}
+
+#contactform{
+    margin-top: 20px;
+}
+
+.form-group{
+    width: 100% !important;
+    clear: both;
+}
+
+.input-group{
+    width: 100% !important;
+}
+
+#contact{
+    width: 53.9% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-columnwrap{
+    height: 34px;
+    float:left;
+}
+
+.form-columnwrap(:first-child){
+    margin-right: 20px;
 }

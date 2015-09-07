@@ -200,8 +200,13 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+    font-family: 'brandon_textbold';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
+
 h6,
 .h6 {
   font-size: 14px;
@@ -1798,6 +1803,7 @@ input[type="date"] {
 }
 .form-group {
   margin-bottom: 15px;
+    
 }
 .radio,
 .checkbox {
@@ -2050,24 +2056,26 @@ select[multiple].input-lg {
   right: 15px;
 }
 .btn {
+    border: none !important;
   display: inline-block;
+background-color: #000;
   margin-bottom: 0;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 20px;
+   text-transform: uppercase;
   border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  user-select: none
 }
 .btn:focus {
   outline: thin dotted;
@@ -2083,8 +2091,6 @@ select[multiple].input-lg {
 .btn.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn.disabled,
 .btn[disabled],
@@ -2093,13 +2099,10 @@ fieldset[disabled] .btn {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 .btn-default {
   color: #ffffff;
   background-color: #000000;
-  border-color: #000000;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -2108,7 +2111,6 @@ fieldset[disabled] .btn {
 .open .dropdown-toggle.btn-default {
   color: #ffffff;
   background-color: #000000;
-  border-color: #000000;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2131,7 +2133,6 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #000000;
-  border-color: #000000;
 }
 .btn-default .badge {
   color: #000000;
@@ -2139,8 +2140,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #ff360c;
-  border-color: #f22a00;
+  background-color: #000;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2222,7 +2222,6 @@ fieldset[disabled] .btn-success.active {
 .btn-info {
   color: #ffffff;
   background-color: #dddddd;
-  border-color: #d0d0d0;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2231,7 +2230,6 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
   background-color: #c9c9c9;
-  border-color: #b2b2b2;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2303,8 +2301,8 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: rbga (0, 0, 0, 100);
+  border-color: none;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -2312,8 +2310,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #d2322d;
-  border-color: #ac2925;
+  background-color: rgba(255, 54, 12, 100);
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -5170,7 +5167,6 @@ a.list-group-item-danger.active:focus {
 button.close {
   padding: 0;
   cursor: pointer;
-  background: transparent;
   border: 0;
   -webkit-appearance: none;
 }
