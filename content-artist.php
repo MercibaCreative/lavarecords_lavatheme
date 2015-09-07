@@ -22,7 +22,8 @@ $tours = get_posts(array(
 
 			<div class="bodycopy">
                 <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
-                <div class="artist-links">
+                
+                <div class="artist-links text-center">
                 	<?php if ($artist["website_link"][0] != "") { ?>
                 		<a href="http://<?php echo $artist["website_link"][0]; ?>"><?php echo $artist["website_link"][0]; ?></a>
                 	<?php } ?>
