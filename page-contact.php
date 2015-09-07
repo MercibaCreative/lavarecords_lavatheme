@@ -15,21 +15,18 @@ Template Name: Contact Template
 
 
 <!-- ==========================CONTENT=========================== -->
-<section id="content" class="container">
+<section id="content contact" class="container">
     
 	<section id="posts">
 
 		<div class="post">
-
+            
+            <div id="contactlogo">
+            <div class="logo"></div>
+            </div> 
 			<div class="bodycopy">
-                <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
-                <!--<div class="logo"></div>-->
 				<h4 class="text-center"><?php echo nl2p($post->post_content); ?></h4>
 			</div>
-           
-
-            
-		
         </div>
 
 	</section>
