@@ -46,9 +46,9 @@ $tours = get_posts(array(
             <table class="table tours">
 	            <thead>
 			      <tr>
-			        <th>Date</th>
-			        <th>Venue</th>
-			        <th>Location</th>
+			        <th>DATE</th>
+			        <th>VENUE</th>
+			        <th>LOCATION</th>
 			        <th></th>
 			      </tr>
 			    </thead>
@@ -58,10 +58,10 @@ $tours = get_posts(array(
 						<?php $tour_artists = $tour_meta["artists"][0]; ?>
 						<?php if (unserialize($tour_artists)[0] == $post->ID) { ?>
 					      <tr>
-					        <td><?php echo($tour_meta["date"][0]); ?></td>
+					        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
 					        <td><?php echo($tour_meta["venue"][0]); ?></td>
 					        <td><?php echo($tour_meta["location"][0]); ?></td>
-					        <td><a href="#">TICKETS</a></td>
+					        <td><a href="http://<?php echo($tour_meta["tickets"][0]); ?>">TICKETS</a></td>
 					      </tr>
 					    <?php } ?>
 					<?php endforeach; ?>

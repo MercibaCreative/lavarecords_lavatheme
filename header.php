@@ -19,12 +19,6 @@
 		<!-- google font magic -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' charset="utf-8" type='text/css'>
 		
-		<!-- bootstrap magic -->
-		<!--<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">-->
-		
-		<!-- slidebars magic -->
-		<!--<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slidebars.min.css">-->
-		
 		<!-- jquery -->
 		<script charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		
@@ -34,15 +28,15 @@
 		<!-- blur.js -->
 		<script charset="utf-8" src="<?php echo get_template_directory_uri(); ?>/js/blur.min.js"></script>
 		
-		<!-- carousel -->
-		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
-
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
+		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lavatheme.css" />
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/simple-sidebar.css" />
+		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tours.css" />
+
 		
         <!-- fontawesome -->
         <link charset="utf-8" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
