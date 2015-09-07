@@ -33,6 +33,7 @@
         <!-- custom css magic -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
+		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/news.css">
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lavatheme.css" />
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/simple-sidebar.css" />

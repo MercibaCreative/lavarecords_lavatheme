@@ -45,5 +45,3 @@ $artists = get_posts($artist_options);
 <?php endforeach; ?>
     
     </div>
-
-<?php get_footer(); ?>

@@ -67,3 +67,5 @@ Template Name: Tours & Events Template
 	    </tbody>
 		</table>
 </section>
+
+<?php get_footer(); ?>
