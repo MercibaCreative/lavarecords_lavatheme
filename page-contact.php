@@ -59,7 +59,7 @@ Template Name: Contact Template
 							</div>
 						</div>
                         
-                        <div class="form-group">
+                        <div class="form-group form-columnwrap">
                             
                             <div class="col-md-6">
 								    <input id="contact-state" class="form-control" type="state" placeholder="State">
@@ -70,6 +70,7 @@ Template Name: Contact Template
 							 </div>
                             
                         </div>
+    
                         
 						<div class="form-group" >
 							<div class="input-group">

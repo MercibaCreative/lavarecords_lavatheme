@@ -26,3 +26,11 @@
     margin-right: auto;
 }
 
+.form-columnwrap{
+    height: 34px;
+    float:left;
+}
+
+.form-columnwrap(:first-child){
+    margin-right: 20px;
+}
