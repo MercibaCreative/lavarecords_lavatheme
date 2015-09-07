@@ -32,7 +32,7 @@ $artists = get_posts($artist_options);
 
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
     
-<a class="artist-links" href=url('<?php echo $artist->guid; ?>')>   
+<a class="artist-links" href="<?php echo get_permalink($artist->ID); ?>">   
 	<section 
              class="artist-section container-fluid jessie-j col-md-4 col-sm-6 col-xs-6" 
              style="background-image: url('<?php echo $image[0];?>'); filter: grayscale(100%); -webkit-filter: grayscale(100%);";
