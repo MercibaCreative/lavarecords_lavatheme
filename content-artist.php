@@ -1,10 +1,17 @@
 <?php 
-
+$has_shows = false;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 $artist = get_post_meta(get_the_ID());
 $tours = get_posts(array(
 	'post_type'        => 'event'
 	));
+foreach($tours as $i => $tour):
+	$tour_meta = get_post_meta($tour->ID);
+	$tour_artists = $tour_meta["artists"][0];
+	if (unserialize($tour_artists)[0] == $post->ID) { 
+		$has_shows = true;
+	}
+endforeach;
 ?>
 
 <!-- ==========================ABOUT CONTENT=========================== -->
@@ -43,31 +50,33 @@ $tours = get_posts(array(
 				<?php echo nl2p($post->post_content); ?>
 			</div>
             
-            <h2 class="text-center">Current Tours</h2>
-            <table class="table tours">
-	            <thead>
-			      <tr>
-			        <th>DATE</th>
-			        <th>VENUE</th>
-			        <th>LOCATION</th>
-			        <th></th>
-			      </tr>
-			    </thead>
-			    <tbody>
-			    	<?php foreach($tours as $i => $tour): ?>
-						<?php $tour_meta = get_post_meta($tour->ID); ?>
-						<?php $tour_artists = $tour_meta["artists"][0]; ?>
-						<?php if (unserialize($tour_artists)[0] == $post->ID) { ?>
-					      <tr>
-					        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
-					        <td><?php echo($tour_meta["venue"][0]); ?></td>
-					        <td><?php echo($tour_meta["location"][0]); ?></td>
-					        <td><a href="http://<?php echo($tour_meta["tickets"][0]); ?>">TICKETS</a></td>
-					      </tr>
-					    <?php } ?>
-					<?php endforeach; ?>
-			    </tbody>
-		  	</table>
+            <?php if ($has_shows == true) { ?>
+	            <h2 class="text-center">Current Tours</h2>
+	            <table class="table tours">
+		            <thead>
+				      <tr>
+				        <th>DATE</th>
+				        <th>VENUE</th>
+				        <th>LOCATION</th>
+				        <th></th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				    	<?php foreach($tours as $i => $tour): ?>
+							<?php $tour_meta = get_post_meta($tour->ID); ?>
+							<?php $tour_artists = $tour_meta["artists"][0]; ?>
+							<?php if (unserialize($tour_artists)[0] == $post->ID) { ?>
+						      <tr>
+						        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
+						        <td><?php echo($tour_meta["venue"][0]); ?></td>
+						        <td><?php echo($tour_meta["location"][0]); ?></td>
+						        <td><a href="http://<?php echo($tour_meta["tickets"][0]); ?>">TICKETS</a></td>
+						      </tr>
+						    <?php } ?>
+						<?php endforeach; ?>
+				    </tbody>
+			  	</table>
+			<?php } ?>
 		
         </div>
 
