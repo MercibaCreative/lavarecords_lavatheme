@@ -28,7 +28,7 @@ Template Name: Tours & Events Template
 <section class="post-header tours-header full-width"> <img src="<?php echo $header_image; ?>" />
 	<div class="mask">
 		<h1><?php echo $next_show_artist->post_title; ?></h1>
-		<h2><?php echo $next_show_meta["venue"][0]; ?> tickets available</h2>
+		<h3><?php echo $next_show_meta["venue"][0]; ?> tickets available</h3>
 	</div>
 </section>
 
