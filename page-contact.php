@@ -59,26 +59,26 @@ Template Name: Contact Template
 							</div>
 						</div>
                         
-                         <div class="form-group">
-							<div class="input-group">
-								<input id="contact-state" class="form-control" type="state" placeholder="State">
-							</div>
-						</div>
+                        <div class="form-group">
+                            
+                            <div class="col-md-6">
+								    <input id="contact-state" class="form-control" type="state" placeholder="State">
+						      </div>
                         
-                          <div class="form-group">
-							<div class="input-group">
+							 <div class="col-md-6">
 								<input id="contact-zip" class="form-control" type="zip" placeholder="Zip">
-							</div>
-						</div>
+							 </div>
+                            
+                        </div>
                         
-						<div class="form-group">
+						<div class="form-group" >
 							<div class="input-group">
 								<textarea class="form-control" id="contact-message" type="message" placeholder="Enter message"></textarea>
 							</div>
 						</div>
                         
 						<div class="form-group">
-							<button type="button" id="contact-send" class="btn btn-danger btn-lg btn-block">Send</button>
+							<button type="button" id="contact-send" class="btn btn-danger btn-lg btn-block"> <h5>Send</h5></button>
 						</div>
                         
 					</form>
