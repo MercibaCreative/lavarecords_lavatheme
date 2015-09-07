@@ -23,7 +23,7 @@ Template Name: Contact Template
 
 			<div class="bodycopy">
                 <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
-                <div class="logo"></div>
+                <!--<div class="logo"></div>-->
 				<h4 class="text-center"><?php echo nl2p($post->post_content); ?></h4>
 			</div>
            
@@ -39,35 +39,43 @@ Template Name: Contact Template
 		
 			<!-- ==========================CONTENT=========================== -->
 			<section id="content" class="container">
-				<section id="contact" class="col-md-8">
-					<form id="contactform" role="form">
+				
+                <section id="contact">
+					
+                    <form id="contactform" role="form">
+                        
+                        <div class="form-group">
+							<div class="input-group">
+								<input class="form-control" id="contact-email" type="email" placeholder="Email">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<div class="input-group">
+								<input class="form-control" id="contact-subject" type="subject" placeholder="Subject">
+							</div>
+						</div>
 						
                         <div class="form-group">
 							<div class="input-group">
-								<div class="input-group-addon"><i class="fa fa-user"></i></div>
-								<input id="contact-name" class="form-control" type="name" placeholder="Enter name">
+								<input id="contact-name" class="form-control" type="name" placeholder="First Name">
+							</div>
+						</div>
+                        
+                         <div class="form-group">
+							<div class="input-group">
+								<input id="contact-state" class="form-control" type="state" placeholder="State">
+							</div>
+						</div>
+                        
+                          <div class="form-group">
+							<div class="input-group">
+								<input id="contact-zip" class="form-control" type="zip" placeholder="Zip">
 							</div>
 						</div>
                         
 						<div class="form-group">
 							<div class="input-group">
-								<div class="input-group-addon">@</div>
-								<input class="form-control" id="contact-email" type="email" placeholder="Enter email">
-							</div>
-						</div>
-                        
-						<div class="form-group">
-							<select class="form-control" id="contact-subject">
-								<option>General</option>
-								<option>Technical</option>
-								<option>Demoes</option>
-								<option>Sales</option>
-							</select>
-						</div>
-                        
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon"><i class="fa fa-ellipsis-h"></i></div>
 								<textarea class="form-control" id="contact-message" type="message" placeholder="Enter message"></textarea>
 							</div>
 						</div>
