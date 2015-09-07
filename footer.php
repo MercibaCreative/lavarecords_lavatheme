@@ -17,6 +17,7 @@
 		
 		<!-- custom js -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/map.js"></script>
 		
 		<!-- carousel -->
 		<script src="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.carousel.js"></script>
