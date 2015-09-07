@@ -37,6 +37,7 @@
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lavatheme.css" />
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/simple-sidebar.css" />
 		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tours.css" />
+		<link charset="utf-8" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact.css" />
 
 		
         <!-- fontawesome -->
