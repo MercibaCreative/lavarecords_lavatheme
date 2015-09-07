@@ -352,35 +352,40 @@ th {
 /*------------LINKS-------------*/
     
   a, a:visited {
-    text-decoration: underline;
+    color: rgba(255, 52, 12, 100) !important;
+    text-decoration: none !important;  
   }
+    
   a[href]:after {
     content: " (" attr(href) ")";
   }
+    
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+    
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
     
 a {
-  color: #ff360c;
-  text-decoration: none;
+    color: rgba(255, 52, 12, 100) !important;
+    text-decoration: none !important;
 }
-a:hover,
-a:focus {
-  color: #ff360c;
-  text-decoration: underline;
+    
+a:hover{
+    color: rgba(0, 0, 0, 100) !important;
+    text-decoration: none !important;
 }
+    
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
     
- 
+
 /*-------------------------*/   
     
     

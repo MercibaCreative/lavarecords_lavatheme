@@ -26,50 +26,31 @@ $artists = get_posts($artist_options);
 ?>
 
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
+
 
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'single-post-thumbnail' ); ?>
 
+<section class="post-header container-fluid"> <img src="<?php echo $image[0];?>" />
+</section>
 
-<!-- ==========================MAIN CONTENT=========================== -->
 
-			<!-- ==========================ABOUT CONTENT=========================== -->
-			<section id="header" class="container-fluid" style="background-image: url('<?php echo $image[0];?>');">
-				<h1>
-					<?php
-						$post = get_post($page->ID); 
-						$title = apply_filters('the_title', $post->post_title); 
-						echo $title;
-					?>
-				</h1>
-				<div class="load"></div>
-			</section>
+<section id="content" class="container">
+    
+	<section id="posts">
 
-			<!-- ==========================CONTENT=========================== -->
-			<section id="content" class="container">
-				
-					<?php 
-						$post = get_post($page->ID); 
-						$content = apply_filters('the_content', $post->post_content); 
-						echo $content; 
-					?>
-				
-				<div class="roster">
-					<h1>
-						Roster
-					</h1>
-					<?php foreach($artists as $artist): ?>
-					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
-					<div class="col-md-4">
-						<div class="image" style="background-image: url('<?php echo $image[0];?>');" alt="<?php echo $artist->post_title; ?>"></div>
-						<h3>
-							<?php echo $artist->post_title; ?>
-						</h3>
-					</div>
-					<?php endforeach; ?>
-					
-				</div>
-			</section>
+		<div class="post">
+
+			<div class="bodycopy">
+                <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
+				<?php echo nl2p($post->post_content); ?>
+			</div>
+
+		
+        </div>
+
+	</section>
+
+</section>
 
 
 <?php get_footer(); ?>
