@@ -34,8 +34,9 @@
 		<!-- blur.js -->
 		<script charset="utf-8" src="<?php echo get_template_directory_uri(); ?>/js/blur.min.js"></script>
 		
-		<!-- carousel -->
+	
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
+        <link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
 
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
