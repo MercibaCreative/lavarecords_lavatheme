@@ -171,7 +171,7 @@ h1,
 }
 h2,
 .h2 {
-    font-family: brandon_grotesquebold;
+    font-family: 'brandon_grotesquebold';
     font-size: 26px;
     line-height: 30px;
     letter-spacing: .07em;
@@ -179,7 +179,10 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 22px;
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .02em;
 }
 h4,
 .h4 {
