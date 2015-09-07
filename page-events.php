@@ -16,12 +16,12 @@ Template Name: Tours & Events Template
 
 ?>
 
-<section class="post-header container-fluid"> <img src="<?php echo $image[0];?>" />
+<section class="post-header full-width"> <img src="<?php echo $image[0];?>" />
 </section>
 
-<section id="content" class="container">
+<section id="content" class="tours-container container">
 	<h2 class="text-center">Tours and Events</h2>
-	<table class="table tours">
+	<table class="table tours-full">
 	    <thead>
 	      <tr>
 	        <th>DATE</th>
