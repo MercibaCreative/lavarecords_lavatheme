@@ -48,7 +48,7 @@ endforeach;
                 	<?php } ?>
                 </div>
 				<?php echo nl2p($post->post_content); ?>
-			</div>
+			
             
             <?php if ($has_shows == true) { ?>
 	            <h2 class="text-center">Current Tours</h2>
@@ -77,6 +77,7 @@ endforeach;
 				    </tbody>
 			  	</table>
 			<?php } ?>
+			</div>
 		
         </div>
 
