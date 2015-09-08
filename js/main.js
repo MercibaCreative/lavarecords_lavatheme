@@ -1,13 +1,21 @@
 $(document).ready(function(){
-    var showName = function(e){
+    var showArtistName = function(e){
         $(e.currentTarget).find("h1").css("display", "table-cell");
     }
-    var hideName = function(e){
+    var hideArtistName = function(e){
         $(e.currentTarget).find("h1").css("display", "none");
     }
+    var showNewsName = function(e){
+    	$(e.currentTarget).find("h1").css("display", "table-cell");
+        $(e.currentTarget).find("h2").css("display", "table-cell");
+    }
+    var hideNewsName = function(e){
+    	$(e.currentTarget).find("h1").css("display", "none");
+        $(e.currentTarget).find("h2").css("display", "none");
+    }
     
-    $(".artist-section").on("mouseenter", showName);
-    $(".artist-section").on("mouseleave", hideName);
-    $(".news-section").on("mouseenter", showName);
-    $(".news-section").on("mouseleave", hideName);
+    $(".artist-section").on("mouseenter", showArtistName);
+    $(".artist-section").on("mouseleave", hideArtistName);
+    $(".news-section").on("mouseenter", showNewsName);
+    $(".news-section").on("mouseleave", hideNewsName);
 });
