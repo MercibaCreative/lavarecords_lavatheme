@@ -2,9 +2,13 @@
     align-self: center;
     max-width: 100%;
     float: none;
-    margin: 1em auto;
+    margin: 0.75em auto 0.25em auto;
 }
 
 .bodycopy img {
 	height: auto;
+}
+
+.bodycopy h1{
+    
 }
