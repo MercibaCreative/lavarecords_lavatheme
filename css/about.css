@@ -1,7 +1,10 @@
 .bodycopy *{
     align-self: center;
     max-width: 100%;
-    height: auto;
     float: none;
     margin: 1em auto;
+}
+
+.bodycopy img {
+	height: auto;
 }
