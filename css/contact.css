@@ -31,6 +31,12 @@
     float:left;
 }
 
-.form-columnwrap(:first-child){
-    margin-right: 20px;
+.form-columnwrap{
+    width: 63.9%;
+    padding-right: -10px;
+    margin-right: -10px;
+}
+
+.gutterfirst{
+    padding-right: 15px;
 }
