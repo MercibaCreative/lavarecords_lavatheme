@@ -2085,7 +2085,6 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
   text-decoration: none;
 }
 .btn:active,
@@ -2136,8 +2135,8 @@ fieldset[disabled] .btn-default.active {
   background-color: #000000;
 }
 .btn-default .badge {
-  color: #000000;
-  background-color: #ffffff;
+  color: #FFF;
+  background-color: #000;
 }
 .btn-primary {
   color: #ffffff;
@@ -2150,7 +2149,6 @@ fieldset[disabled] .btn-default.active {
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #e22700;
-  border-color: #b41f00;
 }
 .btn-primary:active,
 .btn-primary.active,
