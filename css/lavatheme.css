@@ -17,7 +17,7 @@ footer div {
   padding: 10px;
 }
 article {
-  min-height: 100%;
+  min-height: 120%;
 }
 article,
 aside,
@@ -3505,6 +3505,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
+}
+
+.disclaimer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 10px;
 }
 
 .logo {

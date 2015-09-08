@@ -2,7 +2,6 @@
 			<!-- ==========================FOOTER=========================== -->
 
 			<footer id="footer" class="container-fluid">
-				<div class="logo"></div>
 				<div class="disclaimer">
 					&copy; Lava Records. All rights reserved. Designed by MATTE
 				</div>
