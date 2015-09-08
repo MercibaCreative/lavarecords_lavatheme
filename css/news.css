@@ -1,0 +1,32 @@
+.news-left {
+width: 50%;
+float: left;
+}
+
+.news-right {
+width: 50%;
+float: right;
+}
+
+.news-section {
+	border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.news-section h1, .news-section h2 {
+    color: #ffffff !important;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    padding: 15%;
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.news-section img {
+    height: auto;
+    width: 100%;
+}
