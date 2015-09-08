@@ -61,11 +61,11 @@ Template Name: Contact Template
                         
                         <div class="form-group form-columnwrap">
                             
-                            <div class="col-md-6">
+                            <div class="col-md-6 gutterfirst">
 								    <input id="contact-state" class="form-control" type="state" placeholder="State">
 						      </div>
                         
-							 <div class="col-md-6">
+							 <div class="col-md-6 gutter">
 								<input id="contact-zip" class="form-control" type="zip" placeholder="Zip">
 							 </div>
                             
