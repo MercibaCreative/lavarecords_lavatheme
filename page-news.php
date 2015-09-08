@@ -27,11 +27,12 @@ $news = get_posts(array(
 				$heading = 1;
 			}
 		?>
-
-		<div class="news-section col-md-<?php echo $multiple*6; ?> row-<?php echo $multiple; ?>">
-		<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $article->ID ), 'single-post-thumbnail' )[0] ?>" />
-		<h<?php echo $heading ?> class="col-md-12"><?php echo $article->post_title ?></h<?php echo $heading ?>>
-		</div>
+		<a class="news-links" href="<?php echo get_permalink($article->ID); ?>">
+			<div class="news-section col-md-<?php echo $multiple*6; ?> row-<?php echo $multiple; ?>">
+			<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $article->ID ), 'single-post-thumbnail' )[0] ?>" />
+			<h<?php echo $heading ?> class="col-md-12"><?php echo $article->post_title ?></h<?php echo $heading ?>>
+			</div>
+		</a>
 	<?php endforeach; ?>
 </div>
 
@@ -50,11 +51,12 @@ $news = get_posts(array(
 				$heading = 1;
 			}
 		?>
-
-		<div class="news-section col-md-<?php echo $multiple*6; ?> row-<?php echo $multiple; ?>">
-		<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $article->ID ), 'single-post-thumbnail' )[0] ?>" />
-		<h<?php echo $heading ?> class="col-md-12"><?php echo $article->post_title ?></h<?php echo $heading ?>>
-		</div>
+		<a class="news-links" href="<?php echo get_permalink($article->ID); ?>">
+			<div class="news-section col-md-<?php echo $multiple*6; ?> row-<?php echo $multiple; ?>">
+			<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $article->ID ), 'single-post-thumbnail' )[0] ?>" />
+			<h<?php echo $heading ?> class="col-md-12"><?php echo $article->post_title ?></h<?php echo $heading ?>>
+			</div>
+		</a>
 	<?php endforeach; ?>
 </div>
 
