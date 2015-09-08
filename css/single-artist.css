@@ -31,5 +31,6 @@
 }
 
 .artist-social * {
+    color: rgba(255, 52, 12, 100) !important;
     margin: 0 0.20em !important;
 }
