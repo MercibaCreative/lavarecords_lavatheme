@@ -1,15 +1,17 @@
 			
 			<!-- ==========================FOOTER=========================== -->
-			
 
-		</article>
-		</div>
-		<footer id="footer" class="container-fluid">
+			<footer id="footer" class="container-fluid">
 				<div class="logo"></div>
 				<div class="disclaimer">
 					&copy; Lava Records. All rights reserved. Designed by MATTE
 				</div>
 			</footer>
+
+		</article>
+
+		</div>
+		
 		<!-- bootstrap -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		
