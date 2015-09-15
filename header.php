@@ -82,32 +82,18 @@
 				<li><a href="/news">News</a></li>
 				<li><a href="/gallery">Gallery</a></li>
             </ul>
-            <div class="social-media">
-				<a href="https://instagram.com/lavarecordsofficial" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://twitter.com/lavarecordsus" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="https://www.facebook.com/LavaRecordsUS" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a>
-			</div>
+            
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/about">About</a></li>
-			  <li><a href="/contact">Contact</a></li>
+                <li class="social-media">
+				    <a href="https://instagram.com/lavarecordsofficial" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/lavarecordsus" target="_blank"><i class="fa fa-twitter"></i></a>
+				    <a href="https://www.facebook.com/LavaRecordsUS" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a>
+			    </li>
+                <li><a href="/about">About</a></li>
+			    <li><a href="/contact">Contact</a></li>
             </ul>
+              
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-
-      <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-            <li><a href="/artists">Artists</a></li>
-			<li><a href="/events">Tours & Events</a></li>
-			<li><a href="/news">News</a></li>
-			<li><a href="/gallery">Gallery</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/contact">Contact</a></li>
-			<li><a href="https://instagram.com/lavarecordsofficial" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://twitter.com/lavarecordsus" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="https://www.facebook.com/LavaRecordsUS" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://open.spotify.com/user/lavarecords" target="_blank"><i class="fa fa-spotify"></i></a></li>
-          </ul>
-      </div>
-	  <article id="page-content-wrapper">

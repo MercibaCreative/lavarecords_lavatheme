@@ -346,17 +346,19 @@ th {
 /*------------SOCIAL-------------*/
 
 .social-media {
-  position: absolute;
   width: 200px;
-  right: 25%;
   margin: 20px 0;
-  text-align: right;
 }
 .social-media i {
   color: #fff;
 }
 .social-media i:hover {
   color: #ff360c;
+}
+
+.social-media a {
+    display: inline !important;
+    padding: 0 !important;
 }
 
 
@@ -376,6 +378,7 @@ th {
     color: rgba(255, 52, 12, 100) !important;
     text-decoration: none !important;  
   }
+    
     
   a[href]:after {
     content: " (" attr(href) ")";
@@ -3570,6 +3573,12 @@ nav .logo {
   text-decoration: none;
   background-color: #eeeeee;
 }
+
+.nav > li > a:active {
+  text-decoration: none !important;
+  color: rgba(255, 52, 12, 100) !important;
+}
+
 .nav > li.disabled > a {
   color: #999999;
 }
@@ -3883,6 +3892,7 @@ nav .logo {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
+
 @media (min-width: 1024px) {
   .navbar-toggle {
     display: none;
@@ -3931,7 +3941,6 @@ nav .logo {
     padding-bottom: 20.5px;
   }
   .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
   }
 }
 @media (min-width: 1024px) {
