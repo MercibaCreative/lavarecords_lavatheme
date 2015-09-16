@@ -1,0 +1,37 @@
+audio {
+  display: none !important;
+}
+
+.audio-player {
+	height: 35px;
+	width: 100%;
+	padding: 10px;
+}
+
+.audio-player .left-arrow, .audio-player .right-arrow, .audio-player .play-btn, .audio-player .pause-btn {
+	width: 30px;
+	height: 30px;
+	display: inline;
+	cursor: pointer;
+}
+
+.play-btn, .pause-btn {
+	color: rgba(255, 52, 12, 100);
+}
+
+.left-arrow, .right-arrow {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.audio-player p {
+	display: inline;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+	.audio-player {
+		display: none;
+	}
+}
