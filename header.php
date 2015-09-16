@@ -31,6 +31,7 @@
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/audio-player.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/news.css">
@@ -111,3 +112,20 @@
           </ul>
       </div>
 	  <article id="page-content-wrapper">
+
+	  <?php
+	  	$playlist = get_posts(array(
+			'post_type'        => 'track'
+		));
+	  ?>
+	  <div class="audio-player">
+	  	<i class="left-arrow fa fa-angle-left"></i>
+	  	<i class="play-btn fa fa-play"></i>
+	  	<i class="pause-btn fa fa-pause hidden"></i>
+	  	<p id="player-title"></p>
+	  	<i class="right-arrow fa fa-angle-right"></i>
+	  	<?php foreach($playlist as $i => $track): ?>
+			<?php $track_meta = get_post_meta($track->ID); ?>
+			<audio src="<?php echo wp_get_attachment_url($track_meta["mp3"][0]) ?>" type="audio/mp3" controls="controls" data-title="<?php echo $track->post_title ?>"></audio>
+		<?php endforeach; ?>
+	  </div>
