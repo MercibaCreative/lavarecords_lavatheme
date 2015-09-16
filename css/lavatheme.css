@@ -11,7 +11,7 @@ footer {
   color: #aaa;
   text-transform: uppercase;
   font-size: 10px;
-  padding: 15px 10px 10px 10px;
+  padding: 25px 10px 10px 10px;
 }
 footer div {
   padding: 10px;
@@ -333,8 +333,7 @@ textarea {
 }
 optgroup {
   font-weight: bold;
-}
-table {
+}table {
   border-collapse: collapse;
   border-spacing: 0;
 }

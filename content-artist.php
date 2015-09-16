@@ -48,6 +48,15 @@ endforeach;
                 	<?php if ($artist["soundcloud_link"][0] != "") { ?>
                 		<a href="https://soundcloud.com/<?php echo $artist["soundcloud_link"][0]; ?>" target="_blank"><i class="fa fa-soundcloud"></i></a>
                 	<?php } ?>
+                	<?php if ($artist["youtube_link"][0] != "") { ?>
+                		<a href="https://www.youtube.com/user/<?php echo $artist["youtube_link"][0]; ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+                	<?php } ?>
+                	<?php if ($artist["tumblr_link"][0] != "") { ?>
+                		<a href="http://<?php echo $artist["tumblr_link"][0]; ?>.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a>
+                	<?php } ?>
+                	<?php if ($artist["spotify_link"][0] != "") { ?>
+                		<a href="https://play.spotify.com/artist/<?php echo $artist["spotify_link"][0]; ?>" target="_blank"><i class="fa fa-spotify"></i></a>
+                	<?php } ?>
                 </div>
 				<?php echo nl2p($post->post_content); ?>
 			

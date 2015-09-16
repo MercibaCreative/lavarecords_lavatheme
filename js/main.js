@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    var page = window.location.pathname;
+    
+    $('.navbar-nav a').each(function(index, el) {
+        var href = $(el).attr("href")
+        if (page.match(href)) {
+            $(el).css("color", "rgba(255, 52, 12, 100)")
+        }
+    })
+
     var showArtistName = function(e){
         $(e.currentTarget).find("h1").css("display", "table-cell");
     }
