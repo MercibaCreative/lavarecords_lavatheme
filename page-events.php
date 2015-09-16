@@ -33,7 +33,7 @@ Template Name: Tours & Events Template
 </section>
 
 <section id="content" class="tours-container container">
-	<h2 class="text-center">Tours and Events</h2>
+	<h2 class="text-center">Tours & Events</h2>
 	<table class="table tours-full">
 	    <thead>
 	      <tr>

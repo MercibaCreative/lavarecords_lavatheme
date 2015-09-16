@@ -126,6 +126,6 @@
 	  	<i class="right-arrow fa fa-angle-right"></i>
 	  	<?php foreach($playlist as $i => $track): ?>
 			<?php $track_meta = get_post_meta($track->ID); ?>
-			<audio src="<?php echo wp_get_attachment_url($track_meta["mp3"][0]) ?>" type="audio/mp3" controls="controls" data-title="<?php echo $track->post_title ?>"></audio>
+			<audio src="<?php echo wp_get_attachment_url($track_meta["mp3"][0]); ?>" type="audio/mp3" controls="controls" data-title="<?php echo $track->post_title ?>"></audio>
 		<?php endforeach; ?>
 	  </div>

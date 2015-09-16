@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+/*
+    Header Menu Highlight
+*/
+
     var page = window.location.pathname;
     
     $('.navbar-nav a').each(function(index, el) {
@@ -7,6 +12,10 @@ $(document).ready(function(){
             $(el).css("color", "rgba(255, 52, 12, 100)")
         }
     })
+
+/*
+    Artist and News Hover States
+*/
 
     var showArtistName = function(e){
         $(e.currentTarget).find("h1").css("display", "table-cell");
@@ -27,6 +36,10 @@ $(document).ready(function(){
     $(".artist-section").on("mouseleave", hideArtistName);
     $(".news-section").on("mouseenter", showNewsName);
     $(".news-section").on("mouseleave", hideNewsName);
+
+/*
+    Audio Player
+*/
 
     var audioPlayer = document.getElementsByTagName("audio");
     var current = 0;
@@ -67,4 +80,11 @@ $(document).ready(function(){
     $(".pause-btn").on("click", pauseMusic)
     $(".left-arrow").on("click", decrement)
     $(".right-arrow").on("click", increment)
+
+/*
+    About Page - Google Maps Styling
+*/
+
+
+
 });

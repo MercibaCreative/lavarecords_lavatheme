@@ -18,7 +18,7 @@ endforeach;
 
 <!-- ==========================ABOUT CONTENT=========================== -->
 
-<section class="post-header container-fluid"> <img src="<?php echo $image[0];?>" />
+<section class="post-header container-fluid"> <img src="<?php echo wp_get_attachment_url($artist["banner_img"][0]); ?>" />
 </section>
 
 
