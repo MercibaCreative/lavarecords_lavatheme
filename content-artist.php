@@ -12,6 +12,8 @@ foreach($tours as $i => $tour):
 		$has_shows = true;
 	}
 endforeach;
+
+
 ?>
 
 <!-- ==========================ABOUT CONTENT=========================== -->
@@ -78,9 +80,19 @@ endforeach;
 			  	</table>
 			<?php } ?>
 			</div>
+			
 		
-        </div>
-
 	</section>
 
 </section>
+
+<?php if ($artist["youtube_id"][0] != "") { ?>
+<section class="container-fluid post-header">
+	<iframe id="ytplayer" type="text/html" width="100%" height="100%" src="http://www.youtube.com/embed/<?php echo $artist["youtube_id"][0] ?>" frameborder="0"/></iframe>
+</section>
+<?php } ?>
+<?php if ($artist["image"][0] != "") { ?>
+<section class="container-fluid post-header">
+	<img width="100%" height="100%" src="http://www.youtube.com/embed/<?php echo $artist["image"][0] ?>" />
+</section>
+<?php } ?>
