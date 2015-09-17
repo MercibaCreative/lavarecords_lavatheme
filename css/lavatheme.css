@@ -394,7 +394,7 @@ th {
     content: "";
   }
     
-a {
+a, a:link, a:visited {
     color: rgba(255, 52, 12, 100) !important;
     text-decoration: none !important;
 }

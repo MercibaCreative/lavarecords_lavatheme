@@ -30,6 +30,14 @@
     color: rgba(0, 0, 0, 100) !important;
 }
 
+.tours a:link, .tours a:active, .tours a:visited{ 
+    color: rgba(255, 52, 12, 100) !important;
+    text-decoration: none;
+}
+.tours a:hover{ 
+    color: rgba(0, 0, 0, 100) !important;
+}
+
 .artist-social * {
     color: rgba(255, 52, 12, 100) !important;
     margin: 0 0.20em !important;
