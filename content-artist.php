@@ -81,8 +81,10 @@ endforeach;
 						        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
 						        <td><?php echo($tour_meta["venue"][0]); ?></td>
 						        <td><?php echo($tour_meta["location"][0]); ?></td>
-						        <td style="text-align: right;"><a href="http://<?php echo($tour_meta["tickets"][0]); ?>">TICKETS</a></td>
-						      </tr>
+						       <td class="ticketscolumn"> <button type="button" class="btn-primary btn-danger btn-lg btn-block">  <a target="_blank" href="http://<?php echo($tour_meta["tickets"][0]); ?>"><h5>TICKETS</h5></a> </button> </td> 
+						     
+                        
+                        </tr>
 						    <?php } ?>
 						<?php endforeach; ?>
 				    </tbody>

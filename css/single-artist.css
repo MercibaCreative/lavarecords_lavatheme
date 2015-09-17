@@ -31,7 +31,7 @@
 }
 
 .tours a:link, .tours a:active, .tours a:visited{ 
-    color: rgba(255, 52, 12, 100) !important;
+    color: rgba(255, 52, 12, 100);
     text-decoration: none;
 }
 .tours a:hover{ 
