@@ -40,7 +40,7 @@ audio {
 }
 
 .instagram-page-link a:link, .instagram-page-link a:visited, .instagram-page-link a:hover {
-	color: rgb(123, 123, 123);
+	color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 1024px) {
