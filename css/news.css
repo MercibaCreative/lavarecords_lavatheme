@@ -35,9 +35,11 @@ float: right;
     top: 50%;
     height: 50%;
     width: 100%;
+    padding: 0 10%;
+    line-height: 28px;
     margin: 0;
     display: none;
-    font-size: 14px;
+    font-size: 22px;
     letter-spacing: 0.125em;
     font-weight: 400;
 }
