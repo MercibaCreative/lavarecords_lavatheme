@@ -2144,16 +2144,40 @@ fieldset[disabled] .btn-default.active {
   background-color: #000;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #000;
+    color: #FFF;
+    background-color: rgba(255, 54, 12, 1);
+    border: none !important;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    font-size: 14px;
+    height: 34px;
+    text-transform: uppercase;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
 }
+
+.btn-primary a{
+    color: #FFF !important;
+}
+
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #e22700;
+  color: rgba(255, 54, 12, 1);
+  background-color: rgba(255, 54, 12, 1);
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2179,7 +2203,7 @@ fieldset[disabled] .btn-primary.active {
   border-color: #f22a00;
 }
 .btn-primary .badge {
-  color: #ff360c;
+  color: rgba(255, 54, 12, 1);
   background-color: #ffffff;
 }
 .btn-success {
