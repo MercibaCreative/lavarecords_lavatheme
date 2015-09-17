@@ -1488,7 +1488,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 20px;
+  line-height: 30px;
   vertical-align: top;
   border-top: 1px solid #ffffff;
 }
@@ -2176,8 +2176,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: rgba(255, 54, 12, 1);
-  background-color: rgba(255, 54, 12, 1);
+    color: #FFF;
+    background-color: #000 !important;
+     border: none !important;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2199,8 +2200,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #ff360c;
-  border-color: #f22a00;
+  background-color: rgba(255, 54, 12, 1);
+  border-color: none;
 }
 .btn-primary .badge {
   color: rgba(255, 54, 12, 1);

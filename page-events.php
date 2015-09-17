@@ -61,7 +61,7 @@ Template Name: Tours & Events Template
 		        <td><?php echo($tour_meta["type"][0]); ?></td>
 		        <td><?php echo($tour_meta["venue"][0]); ?></td>
 		        <td><?php echo($tour_meta["location"][0]); ?></td>
-		        <td> <button type="button" class="btn-primary btn-danger btn-lg btn-block">  <a href="http://<?php echo($tour_meta["tickets"][0]); ?>"><h5>TICKETS</h5></a> </button> </td> 
+		        <td class="ticketscolumn"> <button type="button" class="btn-primary btn-danger btn-lg btn-block">  <a target="_blank" href="http://<?php echo($tour_meta["tickets"][0]); ?>"><h5>TICKETS</h5></a> </button> </td> 
 						
 		      </tr>
 			<?php endforeach; ?>

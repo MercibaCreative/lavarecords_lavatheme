@@ -33,3 +33,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+td.ticketscolumn{
+    margin-top: -20px !important;
+    padding: 0 !important;
+}
