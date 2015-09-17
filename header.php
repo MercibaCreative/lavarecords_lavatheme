@@ -27,6 +27,9 @@
 		
 		<!-- blur.js -->
 		<script charset="utf-8" src="<?php echo get_template_directory_uri(); ?>/js/blur.min.js"></script>
+
+		<!-- google maps API -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAavLki6mJxk8CMNhmJem2gIHFPkh-sHiQ" type="text/javascript"></script>
 		
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
