@@ -57,7 +57,7 @@ Template Name: Contact Template
 						
                         <div class="form-group">
 							<div class="input-group">
-								<input id="contact-name" class="form-control" type="name" placeholder="First Name">
+								<input id="contact-name" class="form-control" type="name" placeholder="Name">
 							</div>
 						</div>
                         
