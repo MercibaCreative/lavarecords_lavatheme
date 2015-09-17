@@ -34,7 +34,13 @@
     margin-right: auto;
 }
 
+
 td.ticketscolumn{
     margin-top: -20px !important;
     padding: 0 !important;
+}
+
+    .tours-full a:link, .tours-full a:active, .tours-full a:visited{ 
+    color: rgba(255, 52, 12, 100);
+    text-decoration: none;
 }

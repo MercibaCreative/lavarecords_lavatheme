@@ -52,11 +52,11 @@ Template Name: Tours & Events Template
 		        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
 		        <td>
 		        	<?php $tour_artists = unserialize($tour_meta["artists"][0]) ?>
-		        	<?php 
-			        	foreach($artists as $i => $artist):
-			        		if ($artist->ID == $tour_artists[0]) echo $artist->post_title;
-			        	endforeach; 
-		        	?>
+		        	<?php foreach($artists as $i => $artist): 
+		        		if ($artist->ID == $tour_artists[0]) { ?>
+			        	<a href="<?php echo get_permalink($artist->ID); ?>"><?php echo $artist->post_title; ?></a>
+		        	<?php }
+		        		endforeach; ?>
 		        </td>
 		        <td><?php echo($tour_meta["type"][0]); ?></td>
 		        <td><?php echo($tour_meta["venue"][0]); ?></td>
