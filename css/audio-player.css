@@ -4,7 +4,7 @@ audio {
 
 .audio-player {
 	height: 35px;
-	width: 100%;
+	width: 50%;
 	padding: 10px;
 }
 
@@ -28,6 +28,19 @@ audio {
 	font-weight: bold;
 	font-size: 15px;
 	letter-spacing: 0.05em;
+}
+
+.instagram-page-link {
+	height: 35px;
+	width: 20%;
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+.instagram-page-link a:link, .instagram-page-link a:visited, .instagram-page-link a:hover {
+	color: rgb(123, 123, 123);
 }
 
 @media (max-width: 1024px) {
