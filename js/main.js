@@ -26,10 +26,12 @@ $(document).ready(function(){
     var showNewsName = function(e){
     	$(e.currentTarget).find("h1").css("display", "table-cell");
         $(e.currentTarget).find("h2").css("display", "table-cell");
+        $(e.currentTarget).find("p").css("display", "table-cell");
     }
     var hideNewsName = function(e){
     	$(e.currentTarget).find("h1").css("display", "none");
         $(e.currentTarget).find("h2").css("display", "none");
+        $(e.currentTarget).find("p").css("display", "none");
     }
     
     $(".artist-section").on("mouseenter", showArtistName);
