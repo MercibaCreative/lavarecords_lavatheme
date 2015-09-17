@@ -30,3 +30,14 @@ float: right;
     height: auto;
     width: 100%;
 }
+
+.share-buttons {
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
+}
+
+.share-buttons li {
+    display: inline;
+    padding: 0 10px;
+}
