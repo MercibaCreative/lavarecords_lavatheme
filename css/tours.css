@@ -33,3 +33,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.tours-full a:link, .tours-full a:active, .tours-full a:visited{ 
+    color: rgba(255, 52, 12, 100);
+    text-decoration: none;
+}
