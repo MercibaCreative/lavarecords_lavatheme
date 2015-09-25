@@ -42,7 +42,6 @@ $artists = get_posts($artist_options);
 
 			<div class="bodycopy">
                 <h1 class="text-center"><?php echo nl2p($post->post_title); ?></h1>
-                <h2 class="text-center">Jason Flom</h2>
 				<?php echo nl2p($post->post_content); ?>
 			</div>
 
