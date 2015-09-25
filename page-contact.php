@@ -27,7 +27,7 @@ Template Name: Contact Template
                 <div class="logo"></div>
             </div> 
 			<div class="bodycopy">
-				<h3 class="text-center"><?php echo nl2p($post->post_content); ?></h3>
+				<h4 class="text-center"><?php echo nl2p($post->post_content); ?></h4>
 			</div>
         </div>
 
