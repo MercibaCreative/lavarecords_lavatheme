@@ -35,6 +35,7 @@
         
         <!-- custom css magic -->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/audio-player.css" />
+         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/gallery.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-artist.css">
 		<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/news.css">
@@ -121,14 +122,19 @@
 			'post_type'        => 'track'
 		));
 	  ?>
-	  <div class="audio-player">
-	  	<i class="left-arrow fa fa-angle-left"></i>
-	  	<i class="play-btn fa fa-play"></i>
-	  	<i class="pause-btn fa fa-pause hidden"></i>
-	  	<p id="player-title"></p>
-	  	<i class="right-arrow fa fa-angle-right"></i>
-	  	<?php foreach($playlist as $i => $track): ?>
+	 <div id="audio-container">
+        <div class="audio-player">
+            <i class="fa fa-step-backward"></i>
+	  	    <i class="play-btn fa fa-play"></i>
+	  	    <i class="pause-btn fa fa-pause hidden"></i>
+            <i class="fa fa-step-forward"></i>
+            <i class="fa fa-volume-up"></i>
+	  	    <p id="player-title"></p>
+	  	
+	  	    <?php foreach($playlist as $i => $track): ?>
 			<?php $track_meta = get_post_meta($track->ID); ?>
 			<audio src="<?php echo wp_get_attachment_url($track_meta["mp3"][0]); ?>" type="audio/mp3" controls="controls" data-title="<?php echo $track->post_title ?>"></audio>
 		<?php endforeach; ?>
 	  </div>
+    </div>
+          

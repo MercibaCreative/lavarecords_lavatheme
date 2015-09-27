@@ -2,26 +2,38 @@ audio {
   display: none !important;
 }
 
+#audio-container{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    background-color: #FFF;
+    display: inline;
+}
+
 .audio-player {
 	height: 35px;
 	width: 50%;
-	padding: 10px;
+    display: inline;
+    margin-top: 23px;
+    margin-left: 20px;
+    float: left;
+    align-content: left;
+    text-align: left;
+
+
 }
 
-.audio-player .left-arrow, .audio-player .right-arrow, .audio-player .play-btn, .audio-player .pause-btn {
+.audio-player *{
 	width: 30px;
-	height: 30px;
 	display: inline;
 	cursor: pointer;
+    color: #000;
 }
 
-.play-btn, .pause-btn {
-	color: rgba(255, 52, 12, 100);
-}
-
-.left-arrow, .right-arrow {
-	color: rgba(0, 0, 0, 0.5);
-}
 
 .audio-player p {
 	display: inline;

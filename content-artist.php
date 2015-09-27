@@ -66,9 +66,9 @@ endforeach;
 	            <table class="table tours">
 		            <thead>
 				      <tr>
-				        <th>DATE</th>
-				        <th>VENUE</th>
-				        <th>LOCATION</th>
+				        <th><h6>DATE</h6></th>
+                          <th><h6>VENUE</h6></th>
+                          <th><h6>LOCATION</h6></th>
 				        <th></th>
 				      </tr>
 				    </thead>

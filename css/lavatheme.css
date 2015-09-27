@@ -78,8 +78,8 @@ small {
 
 body {
   font-family: 'brandon_grotesque_regularRg';
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   color: #222222;
   background-color: #ffffff;
 }
@@ -220,7 +220,10 @@ h5,
 
 h6,
 .h6 {
-  font-size: 14px;
+    font-family: 'brandon_textbold';
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .02em;
 }
 
 /*-------------------------*/
@@ -3567,6 +3570,9 @@ nav .logo {
 
 
 .nav {
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 14px;
+  letter-spacing: .1em;
   text-transform: uppercase;
   margin-bottom: 0;
   padding-left: 0;
