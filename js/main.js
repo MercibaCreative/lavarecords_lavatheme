@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.navbar-nav a').each(function(index, el) {
         var href = $(el).attr("href")
         if (page.match(href)) {
-            $(el).css("color", "rgba(255, 52, 12, 100)")
+            $(el).css("color", "rgba(255, 52, 12, 100)");
         }
     })
 
@@ -82,6 +82,8 @@ $(document).ready(function(){
     $(".pause-btn").on("click", pauseMusic)
     $(".left-arrow").on("click", decrement)
     $(".right-arrow").on("click", increment)
+
+    // $(".play-btn").click();
 
 /*
     About Page - Google Maps Styling

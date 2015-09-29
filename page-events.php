@@ -7,10 +7,17 @@ Template Name: Tours & Events Template
 <?php
 
 	$tours = get_posts(array(
-		'post_type'        => 'event'
+		'post_type'        => 'event',
+		'posts_per_page'   => 100,
+		'orderby'          => 'meta_value',
+		'meta_key'		   => 'date',
+		'order'            => 'ASC',
 		));
 	$artists = get_posts(array(
-		'post_type' => 'artist' 
+		'post_type' => 'artist',
+		'posts_per_page'   => 100,
+		'orderby'          => 'menu_order',
+		'order'            => 'ASC',
 		));
 	
 	$next_show = $tours[0];
@@ -19,9 +26,10 @@ Template Name: Tours & Events Template
 	foreach($artists as $i => $artist):
 		if ($artist->ID == $next_show_artist_id) {
 			$next_show_artist = $artist;
-			$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
+			//$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
 		}
-	endforeach; 
+	endforeach;
+	$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $tours[0]->ID ), 'single-post-thumbnail' )[0]
 
 ?>
 
@@ -48,22 +56,24 @@ Template Name: Tours & Events Template
 	    <tbody>
 	    	<?php foreach($tours as $i => $tour): ?>
 			  <?php $tour_meta = get_post_meta($tour->ID); ?>
-		      <tr>
-		        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
-		        <td>
-		        	<?php $tour_artists = unserialize($tour_meta["artists"][0]) ?>
-		        	<?php foreach($artists as $i => $artist): 
-		        		if ($artist->ID == $tour_artists[0]) { ?>
-			        	<a href="<?php echo get_permalink($artist->ID); ?>"><?php echo $artist->post_title; ?></a>
-		        	<?php }
-		        		endforeach; ?>
-		        </td>
-		        <td><?php echo($tour_meta["type"][0]); ?></td>
-		        <td><?php echo($tour_meta["venue"][0]); ?></td>
-		        <td><?php echo($tour_meta["location"][0]); ?></td>
-		        <td class="ticketscolumn"> <button type="button" class="btn-primary btn-danger btn-lg btn-block">  <a target="_blank" href="http://<?php echo($tour_meta["tickets"][0]); ?>"><h5>TICKETS</h5></a> </button> </td> 
-						
-		      </tr>
+			  <?php if (new DateTime($tour_meta["date"][0]) > new DateTime()) { ?>
+			      <tr>
+			        <td><?php echo date_format(new DateTime($tour_meta["date"][0]), "M d"); ?></td>
+			        <td>
+			        	<?php $tour_artists = unserialize($tour_meta["artists"][0]) ?>
+			        	<?php foreach($artists as $i => $artist): 
+			        		if ($artist->ID == $tour_artists[0]) { ?>
+				        	<a href="<?php echo get_permalink($artist->ID); ?>"><?php echo $artist->post_title; ?></a>
+			        	<?php }
+			        		endforeach; ?>
+			        </td>
+			        <td><?php echo($tour_meta["type"][0]); ?></td>
+			        <td><?php echo($tour_meta["venue"][0]); ?></td>
+			        <td><?php echo($tour_meta["location"][0]); ?></td>
+			        <td class="ticketscolumn"> <button type="button" class="btn-primary btn-danger btn-lg btn-block">  <a target="_blank" href="http://<?php echo($tour_meta["tickets"][0]); ?>"><h5>TICKETS</h5></a> </button> </td> 
+							
+			      </tr>
+			  <?php } ?>
 			<?php endforeach; ?>
 	    </tbody>
 		</table>
