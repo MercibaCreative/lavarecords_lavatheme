@@ -55,24 +55,30 @@ Template Name: Tours & Events Template
 <section class="post-header tours-header full-width"> 
 	<div data-carousel-id="1" class="full-width activeSlide">
 		<img src="<?php echo $first_header_image; ?>" />
+		<a target="_blank" href="http://<?php echo($first_show_meta["tickets"][0]); ?>">
 		<div class="mask">
 			<h1><?php echo $first_show_artist->post_title; ?></h1>
 			<h3><?php echo $first_show_meta["venue"][0]; ?> tickets available</h3>
 		</div>
+		</a>
 	</div>
 	<div data-carousel-id="2" class="full-width">
 		<img src="<?php echo $second_header_image; ?>" />
+		<a target="_blank" href="http://<?php echo($second_show_meta["tickets"][0]); ?>">
 		<div class="mask">
 			<h1><?php echo $second_show_artist->post_title; ?></h1>
 			<h3><?php echo $second_show_meta["venue"][0]; ?> tickets available</h3>
 		</div>
+		</a>
 	</div>
 	<div data-carousel-id="3" class="full-width">
 		<img src="<?php echo $third_header_image; ?>"/>
+		<a target="_blank" href="http://<?php echo($third_show_meta["tickets"][0]); ?>">
 		<div class="mask">
 			<h1><?php echo $third_show_artist->post_title; ?></h1>
 			<h3><?php echo $third_show_meta["venue"][0]; ?> tickets available</h3>
 		</div>
+		</a>
 	</div>
 	<span class="controls"><i class="fa fa-circle" data-carousel-id="1"></i><i class="fa fa-circle-thin" data-carousel-id="2"></i><i class="fa fa-circle-thin" data-carousel-id="3"></i></span>
 </section>
