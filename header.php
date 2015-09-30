@@ -29,7 +29,6 @@
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/audio-player.css" />
          <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/gallery.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />

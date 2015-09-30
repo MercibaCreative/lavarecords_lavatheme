@@ -113,10 +113,6 @@ if (page.match("contact")) {
 
 */
 
-$('.post-header').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
+
 
 });

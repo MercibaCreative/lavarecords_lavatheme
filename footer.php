@@ -13,7 +13,6 @@
 		
 		<!-- bootstrap -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 		<!-- custom js -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/map.js"></script>
