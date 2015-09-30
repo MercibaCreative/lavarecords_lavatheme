@@ -20,23 +20,59 @@ Template Name: Tours & Events Template
 		'order'            => 'ASC',
 		));
 	
-	$next_show = $tours[0];
-	$next_show_meta = get_post_meta($next_show->ID); 
-	$next_show_artist_id = unserialize($next_show_meta["artists"][0])[0];
+	$first_show = $tours[0];
+	$first_show_meta = get_post_meta($first_show->ID); 
+	$first_show_artist_id = unserialize($first_show_meta["artists"][0])[0];
 	foreach($artists as $i => $artist):
-		if ($artist->ID == $next_show_artist_id) {
-			$next_show_artist = $artist;
-			//$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
+		if ($artist->ID == $first_show_artist_id) {
+			$first_show_artist = $artist;
+			$first_header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
 		}
 	endforeach;
-	$header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $tours[0]->ID ), 'single-post-thumbnail' )[0]
 
+	$second_show = $tours[1];
+	$second_show_meta = get_post_meta($second_show->ID); 
+	$second_show_artist_id = unserialize($second_show_meta["artists"][0])[0];
+	foreach($artists as $i => $artist):
+		if ($artist->ID == $second_show_artist_id) {
+			$second_show_artist = $artist;
+			$second_header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
+		}
+	endforeach;
+
+	$third_show = $tours[2];
+	$third_show_meta = get_post_meta($third_show->ID); 
+	$third_show_artist_id = unserialize($third_show_meta["artists"][0])[0];
+	foreach($artists as $i => $artist):
+		if ($artist->ID == $third_show_artist_id) {
+			$third_show_artist = $artist;
+			$third_header_image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' )[0];
+		}
+	endforeach;
+	
 ?>
 
-<section class="post-header tours-header full-width"> <img src="<?php echo $header_image; ?>" />
-	<div class="mask">
-		<h1><?php echo $next_show_artist->post_title; ?></h1>
-		<h3><?php echo $next_show_meta["venue"][0]; ?> tickets available</h3>
+<section class="post-header tours-header full-width"> 
+	<div>
+		<img src="<?php echo $first_header_image; ?>" data-carousel-id="1"/>
+		<div class="mask" data-carousel-id="1">
+			<h1><?php echo $first_show_artist->post_title; ?></h1>
+			<h3><?php echo $first_show_meta["venue"][0]; ?> tickets available</h3>
+		</div>
+	</div>
+	<div>
+		<img src="<?php echo $second_header_image; ?>" data-carousel-id="2"/>
+		<div class="mask" data-carousel-id="2" >
+			<h1><?php echo $second_show_artist->post_title; ?></h1>
+			<h3><?php echo $second_show_meta["venue"][0]; ?> tickets available</h3>
+		</div>
+	</div>
+	<div>
+		<img src="<?php echo $third_header_image; ?>" data-carousel-id="3"/>
+		<div class="mask" data-carousel-id="3">
+			<h1><?php echo $third_show_artist->post_title; ?></h1>
+			<h3><?php echo $third_show_meta["venue"][0]; ?> tickets available</h3>
+		</div>
 	</div>
 </section>
 

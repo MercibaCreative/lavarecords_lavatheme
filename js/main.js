@@ -89,19 +89,34 @@ $(document).ready(function(){
     About Page - Google Maps Styling
 */
 
-var address = new google.maps.LatLng(40.765901, -73.982323);
-var mapOptions = {
-  zoom: 15,
-  center: address,
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
-  styles: [{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#e9dcdc"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#f0e5e5"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ff6868"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#fa2525"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#d89d9d"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.government","elementType":"geometry.fill","stylers":[{"color":"#e9dcdc"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"transit.line","elementType":"geometry.fill","stylers":[{"color":"#ff6868"}]},{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.medical","elementType":"all","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.attraction","elementType":"geometry","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#d89d9d"}]},{"featureType":"landscape.natural","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#eee9e9"}]},{"featureType":"poi.place_of_worship","elementType":"geometry","stylers":[{"color":"#f2eaea"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#e9dcdc"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#474747"}]}]
+if (page.match("contact")) {
+
+    var address = new google.maps.LatLng(40.765901, -73.982323);
+    var mapOptions = {
+      zoom: 15,
+      center: address,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#e9dcdc"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#f0e5e5"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ff6868"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#fa2525"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#d89d9d"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.government","elementType":"geometry.fill","stylers":[{"color":"#e9dcdc"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"transit.line","elementType":"geometry.fill","stylers":[{"color":"#ff6868"}]},{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.medical","elementType":"all","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.attraction","elementType":"geometry","stylers":[{"color":"#f2eaea"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#d89d9d"}]},{"featureType":"landscape.natural","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#eee9e9"}]},{"featureType":"poi.place_of_worship","elementType":"geometry","stylers":[{"color":"#f2eaea"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#e9dcdc"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#474747"}]}]
+    }
+
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({
+        position: address,
+        map: map,
+        title: 'Lava Records'
+      });
 }
 
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-var marker = new google.maps.Marker({
-    position: address,
-    map: map,
-    title: 'Lava Records'
-  });
+/*
+
+    Events page
+
+*/
+
+$('.post-header').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
 
 });

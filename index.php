@@ -31,16 +31,31 @@ $artists = get_posts($artist_options);
     <?php //var_dump($artist) ?>
 
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $artist->ID ), 'single-post-thumbnail' ); ?>
-    
-<a class="artist-links" href="<?php echo get_permalink($artist->ID); ?>">   
-	<section 
-             class="artist-section container-fluid jessie-j col-md-4 col-sm-6 col-xs-6" 
-             style="background-image: url('<?php echo $image[0];?>'); filter: grayscale(100%); -webkit-filter: grayscale(100%);";
-    >
-    <h1><?php echo $artist->post_title; ?></h1>
-	</section>
-    
-</a> 
+    <?php if (((count($artists) % 3) == 1) && ($i == (count($artists) - 1))) { ?>
+		<section class="col-md-4" style="height: 1px;">
+		</section>
+	<?php } ?>
+	<?php if (((count($artists) % 3) == 2) && ($i == (count($artists) - 2))) { ?>
+		<section class="col-md-2" style="height: 1px;">
+		</section>
+	<?php } ?>
+	<a class="artist-links" href="<?php echo get_permalink($artist->ID); ?>">   
+		<section 
+	             class="artist-section container-fluid col-md-4 col-sm-6 col-xs-6" 
+	             style="background-image: url('<?php echo $image[0];?>'); filter: grayscale(100%); -webkit-filter: grayscale(100%);";
+	    >
+	    <h1><?php echo $artist->post_title; ?></h1>
+		</section>
+	    
+	</a>
+	<?php if (((count($artists) % 3) == 2) && ($i == (count($artists) - 1))) { ?>
+		<section class="col-md-2" style="height: 1px;">
+		</section>
+	<?php } ?>
+	<?php if (((count($artists) % 3) == 1) && ($i == (count($artists) - 1))) { ?>
+		<section class="col-md-4" style="height: 1px;">
+		</section>
+	<?php } ?>
 
 <?php endforeach; ?>
     

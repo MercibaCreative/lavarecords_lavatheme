@@ -5,16 +5,8 @@
 		<title>Lava Records</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        
-        <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
-        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon"/>
 
 		<!-- font awesome magic -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" charset="utf-8" rel="stylesheet">
@@ -37,6 +29,7 @@
     	<link charset="utf-8" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" type="text/css" charset="utf-8" />
         
         <!-- custom css magic -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/audio-player.css" />
          <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/gallery.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/artist-section.css" />
