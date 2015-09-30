@@ -22,18 +22,6 @@
     padding: 120px;
 }
 
-.mask:nth-child(4) {
-    left: 0;
-}
-
-.mask:nth-child(5) {
-    left: 100%;
-}
-
-.mask:nth-child(6) {
-    left: 200%;
-}
-
 .controls {
     position: absolute;
     color: #fff;
@@ -41,6 +29,12 @@
     bottom: 10px;
     text-align: center;
     cursor: pointer;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.activeSlide {
+    z-index: 2;
 }
 
 .carousel-selected {
@@ -59,17 +53,21 @@
     margin-right: auto;
 }
 
-.tours-header img:first-child {
+.tours-header > div {
+    height: 377px;
+}
+
+.tours-header > div:first-child {
     position: absolute;
     left: 0;
 }
 
-.tours-header img:nth-child(2) {
+.tours-header > div:nth-child(2) {
     position: absolute;
     left: 100%;
 }
 
-.tours-header img:nth-child(3) {
+.tours-header > div:nth-child(3) {
     position: absolute;
     left: 200%;
 }
