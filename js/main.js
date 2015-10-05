@@ -80,8 +80,8 @@ $(document).ready(function(){
 
     $(".play-btn").on("click", playMusic)
     $(".pause-btn").on("click", pauseMusic)
-    $(".left-arrow").on("click", decrement)
-    $(".right-arrow").on("click", increment)
+    $(".fa-step-backward").on("click", decrement)
+    $(".fa-step-forward").on("click", increment)
 
     // $(".play-btn").click(); // Uncomment this line to auto-play. Not recommended for usability reasons.
 
@@ -115,18 +115,32 @@ if (page.match("contact")) {
 
 function Carousel() {
     this.el = $('.tours-header');
-    this.multiple = parseInt($('div[data-carousel-id="2"]').css("left").replace("px", ""));
-
     $('i[data-carousel-id]').on("click", this.clickControl.bind(this))
+    this.getMultiple()
 
+    this.counter = 1
+
+    setInterval(function() {
+        $('i[data-carousel-id='+this.counter+']').click()
+        if (this.counter < 3) this.counter++
+        else if (this.counter === 3) this.counter = 1
+    }.bind(this), 5000)
+    
     return this;
 }
 
 Carousel.prototype.clickControl = function(e) {
+    if ($(e.currentTarget).hasClass('fa-circle')) return
+    this.getMultiple()
     $('i[data-carousel-id]').addClass('fa-circle-thin');
     $(e.currentTarget).removeClass('fa-circle-thin');
+    $('.fa-circle').removeClass('fa-circle');
     $(e.currentTarget).addClass('fa-circle');
     this.updateSlides($(e.currentTarget).data('carousel-id'))
+}
+
+Carousel.prototype.getMultiple = function() {
+    this.multiple = $(window).width()
 }
 
 Carousel.prototype.updateSlides = function(active) {
@@ -134,24 +148,11 @@ Carousel.prototype.updateSlides = function(active) {
     $('.activeSlide').animate({ "left": this.multiple*-1 }, 500)
     $('.activeSlide').removeClass('activeSlide')
     $('div[data-carousel-id="'+active+'"]').addClass('activeSlide')
+    $('.activeSlide').animate({ "left": 0 }, 500)
 
-    if (active === 1) {
-        $('div[data-carousel-id="1"]').animate({ "left": 0 }, 500)
-        $('div[data-carousel-id="2"]').animate({ "left": this.multiple }, 500)
-        $('div[data-carousel-id="3"]').animate({ "left": this.multiple*2 }, 500)
-    }
-
-    if (active === 2) {
-        $('div[data-carousel-id="2"]').animate({ "left": 0 }, 500)
-        $('div[data-carousel-id="3"]').animate({ "left": this.multiple }, 500)
-        $('div[data-carousel-id="1"]').animate({ "left": this.multiple*2 }, 500)
-    }
-
-    if (active === 3) {
-        $('div[data-carousel-id="3"]').animate({ "left": 0 }, 500)
-        $('div[data-carousel-id="1"]').animate({ "left": this.multiple }, 500)
-        $('div[data-carousel-id="2"]').animate({ "left": this.multiple*2 }, 500)
-    }
+    $('div[data-carousel-id]').each(function(index, slide) {
+        if ($(slide).data('carousel-id') !== active) $(slide).animate({ "left": this.multiple }, 500)
+    }.bind(this))
 
 }
 

@@ -3,7 +3,6 @@
 $artist_options = array(
 	'posts_per_page'   => 15,
 	'offset'           => 0,
-	'category'         => 'featured',
 	'orderby'          => 'menu_order',
 	'order'            => 'ASC',
 	'include'          => '',

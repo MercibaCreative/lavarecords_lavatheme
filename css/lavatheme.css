@@ -7,7 +7,9 @@ body,
 }
 footer {
   width: 100%;
+  z-index: -1;
   text-align: center;
+  bottom: 0;
   color: #aaa;
   text-transform: uppercase;
   font-size: 10px;
@@ -3538,12 +3540,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 
+#content {
+  padding-bottom: 50px;
+}
+
 .disclaimer {
-  position: absolute;
+  /*position: absolute;
   bottom: 5px;
-  left: 0;
+  left: 0;*/
   width: 100%;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 nav {
